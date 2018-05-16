@@ -21,6 +21,7 @@
 
 
 Route::resource('publictestimonials', 'Home\TestimonialsControllerPublic');
+Route::resource('publicusers', 'Home\UserControllerPublic');
 
 
 Route::resource('publicnewsletters', 'Home\NewslettersControllerPublic');
