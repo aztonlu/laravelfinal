@@ -15,7 +15,7 @@
  * FR
 ******/
 Route::get('/', function () {
-    return view('website.fr.index');
+    return view('website.es.index');
 });
 
 /* Pages */

@@ -36,6 +36,22 @@
                     </div>
                 </div>
                 @endif
+
+                @if(Auth::user()->type == "member")
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-green">
+                        <div class="inner">
+                            <h3>01</h3>
+                            <p>Registrar usuario</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-person-add"></i>
+                        </div>
+                        <a href="{{route('users.indexcliente')}}" class="small-box-footer">Entrar al módulo <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                @endif
                 <!-- ./col -->
                 <!-- REGISTRAR PAISES -->
                 <!--<div class="col-lg-3 col-xs-6">
@@ -53,20 +69,7 @@
                 </div>
                 <!-- ./col -->
 
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
-                    <div class="small-box bg-maroon">
-                        <div class="inner">
-                            <h3>00</h3>
-                            <p>Agregar categorias</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-bookmark"></i>
-                        </div>
-                        <a href="{{route('categories.index')}}" class="small-box-footer">Entrar al módulo <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-                <!-- ./col -->
+                
 
                 <div class="col-lg-3 col-xs-6">
                     <!-- small box -->

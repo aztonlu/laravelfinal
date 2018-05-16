@@ -421,6 +421,13 @@ Route::group(['prefix' => 'admin'], function (){
     Route::get('/', ['as' => 'admin.index', function(){
         return view('admin.index');
     }])->middleware('auth');
+
+    //aqui estoy agregando el indexcliente
+    Route::get('/', ['as' => 'admin.index', function(){
+        return view('admin.index');
+    }])->middleware('auth');
+
+    
     
     Route::resource('comments','Admin\CommentsController');
     
