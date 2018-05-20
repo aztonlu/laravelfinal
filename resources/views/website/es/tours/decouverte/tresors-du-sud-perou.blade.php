@@ -36,10 +36,10 @@
             @foreach($tours as $tour)
             <h2>{{ $tour->title}}</h2>
 
-            <div id="shop-detail">
+            <!--<div id="shop-detail">
 
-                <!-- Shop item / START -->
-                <div class="shop-item">
+                 Shop item / START -->
+                <!--<div class="shop-item">
 
                     <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height: 450px">
                     	<ol class="carousel-indicators">
@@ -62,7 +62,7 @@
 					    	@endforeach
 					      
 					    </div>
-					    <!-- Left and right controls -->
+					    <!-- Left and right controls 
 					    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
 					      <span class="glyphicon glyphicon-chevron-left"></span>
 					      <span class="sr-only">Previous</span>
@@ -74,12 +74,12 @@
                     </div>
 
 
-                </div><!-- Shop item / END -->
+                </div><!-- Shop item / END 
 
-            </div>
+            </div>-->
 
             <div class="description">
-                <h3>En quelques mots...</h3>
+                <h3>En quelques mo.2121321ts...</h3>
                 <br>
                 <p>{{ $tour->summary}}</p>
                 
@@ -128,7 +128,7 @@
 
                 </div>
 
-                <div class="tab-pane" id="overview">
+                <!--<div class="tab-pane" id="overview">
                     <div class="row">
                         @foreach($organizations as $orga)
                         <div class="col-sm-12">
@@ -138,7 +138,7 @@
                         </div>
                         @endforeach
                     </div>
-                </div>
+                </div>-->
 
                 
 

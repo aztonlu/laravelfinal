@@ -24,7 +24,7 @@
         <div class="col-sm-6">
           <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="folio-image">
-              <img class="img-responsive" src="img/peru_portada.jpg" alt="">
+              <img class="img-responsive" src="img/fondo1.png" alt="">
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -54,25 +54,25 @@
                 <!-- Wrapper for slides -->
                   <div class="carousel-inner">
                     <div class="item active">
-                     <img class="img-responsive" src="img/peru1.jpg" width="100%;" alt="...">
+                     <img class="img-responsive" src="img/fondo1.png" width="100%;" alt="...">
                       <div class="carousel-caption">
                         Descripcion 1 <br>
                       </div>
                     </div>
                     <div class="item">
-                      <img class="img-responsive" src="img/peru2.jpg" width="100%;" alt="...">
+                      <img class="img-responsive" src="img/fondo1.png" width="100%;" alt="...">
                       <div class="carousel-caption">
                         Descripcion 2
                       </div>
                     </div>
                      <div class="item">
-                      <img class="img-responsive" src="img/peru3.jpg" width="100%;" alt="...">
+                      <img class="img-responsive" src="img/fondo1.png" width="100%;" alt="...">
                       <div class="carousel-caption">
                         Descripcion 3
                       </div>
                     </div>
                     <div class="item">
-                      <img class="img-responsive" src="img/peru1.jpg" width="100%;" alt="...">
+                      <img class="img-responsive" src="img/fondo1.png" width="100%;" alt="...">
                       <div class="carousel-caption">
                         Descripcion 4
                       </div>
@@ -119,18 +119,18 @@
         <div class="modal fade" id="favoritesModalRegistrese" 
               tabindex="-1" role="dialog" 
             aria-labelledby="favoritesModalRegistrese">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" 
-          data-dismiss="modal" 
-          aria-label="Close">
-          <span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" 
-        id="favoritesModalRegistrese" style="color: red">Ingrese sus datos</h4>
-      </div>
-      <div class="modal-body"> 
-
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" 
+                    data-dismiss="modal" 
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" 
+                  id="favoritesModalRegistrese" style="color: red">Ingrese sus datos</h4>
+                </div>
+        <div class="modal-body"> 
           <form id="main2-contact-form" name="contact-form" method="post" action="{{ route('publicusers.store') }}" enctype="multipart/form-data">
              <?php $url = Request::path();?>
               <input type="hidden" name="language" value="Spanish">
