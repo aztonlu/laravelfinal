@@ -431,6 +431,8 @@ Route::group(['prefix' => 'admin'], function (){
     
     
     Route::resource('comments','Admin\CommentsController');
+
+    Route::resource('reservations','Admin\ReservationsController');
     
     Route::resource('tags', 'Admin\TagController');
     Route::get('tags/{id}/destroy', [
@@ -589,7 +591,7 @@ Route::get('it/blogs/{id}', [
 Route::group(['prefix' => '/'], function (){
     Route::get('/', function(){
         
-          return redirect('/fr');
+          return redirect('/es');
     });
      Route::get('/{lenguage}', [
         'uses'  => 'Admin\UsersController@indexPrincipal',

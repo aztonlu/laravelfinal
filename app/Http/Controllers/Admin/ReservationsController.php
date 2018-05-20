@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Models\Reservation;
 use App\Http\Controllers\Controller;
+use DB;
 
 class ReservationsController extends Controller
 {
@@ -15,7 +16,8 @@ class ReservationsController extends Controller
      */
     public function index()
     {
-        //
+        $Reservation = Reservation::orderBy('id', 'ASC')->paginate(); 
+        return view('admin.reservations.index')->with('Reservation',$Reservation);
     }
 
     /**
@@ -53,7 +55,7 @@ class ReservationsController extends Controller
         $res->hostel = $request->hostel;
         $res->plus = $request->plus;
         $res->save();
-        flash('received with success, we will contact you as soon as possible', 'success')->important();
+        flash('Reserva con éxito, dispone de 30 minutos para acercarse al terminal', 'success')->important();
         return back();
     }
 

@@ -1,5 +1,5 @@
 @extends('admin.partials.datatables')
-@section('title', 'Tours')
+@section('title', 'Reservas')
 
 @section('content')
     <!-- Content Wrapper. Contains page content -->
@@ -7,12 +7,12 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Tours 
+                Reservas 
                 <small>Listado</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
-                <li class="active">Tours</li>
+                <li class="active">Reservas</li>
             </ol>
         </section>
 
@@ -24,34 +24,31 @@
                 </div>
                 <div class="col-xs-12">
                     <div class="box">
-                        <!-- /.box-header -->
 
                         <div class="box-body">
                             <table id="example1" class="table table-bordered table-striped">
                                 <thead>
                                 <tr>
                                     <th>Id</th>
-                                    <th>Nombre</th>
-                                    <th>E-mail</th>
+                                    <th>Names</th>
+                                    <th>Email</th>
+                                    <th>Teléfono</th>
                                     <th>DNI</th>
-                                    <!--<th>Estado</th>-->
+                                    <th>Horario</th>
+                                    <th>Cantidad pasajes</th>
+                                    
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($comments as $comment)
+                                @foreach($Reservation as $reservation)
                                     <tr>
-                                        <td>{{$comment->id}}</td>
-                                        <td>{{$comment->nameUser}}</td>
-                                        <td>{{$comment->email}}</td>
-                                        <td>{{$comment->question}}</td>
-                                        <!--<td>&nbsp;&nbsp;&nbsp;
-                                        	@if($comment->status == "")
-                                        	<a href="" style="color:red;"><span class="ion-email-unread"></span></a>
-                                        	@else
-                                        	<a href="" style="color:green;"><span class="ion-email"></span></a>
-                                        	@endif 
-                                        	&nbsp;&nbsp;&nbsp;
-                                        </td>-->
+                                        <td>{{$reservation->id}}</td>
+                                        <td>{{$reservation->names}}</td>
+                                        <td>{{$reservation->email}}</td>
+                                        <td>{{$reservation->phone}}</td>
+                                        <td>{{$reservation->skype}}</td>
+                                        <td>{{$reservation->checkin}}</td>
+                                        <td>{{$reservation->message}}</td>
                                     </tr>
                                 @endforeach
 
@@ -59,14 +56,15 @@
                                 <tfoot>
                                 <tr>
                                     <th>Id</th>
-                                    <th>Nombre</th>
-                                    <th>E-mail</th>
+                                    <th>Names</th>
+                                    <th>Email</th>
+                                    <th>Teléfono</th>
                                     <th>DNI</th>
-                                    <!--<th>Estado</th>-->
+                                    <th>Horario</th>
+                                    <th>Cantidad pasajes</th>
                                 </tr>
                                 </tfoot>
                             </table>
-                    
                         </div>
                         <!-- /.box-body -->
                     </div>
