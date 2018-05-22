@@ -1,4 +1,5 @@
-<?php use App\Models\Article; $articles = Article::where("blog_id",51)->get();?> @extends("website.partials.es.maintrip") @section("blog español", "Ruta, tesis")     @section("content")<div class="trip-detail"> <div class="container">
+<?php use App\Models\Article; $articles = Article::where("blog_id",52)->get();?> @extends("website.partials.es.maintrip") @section("blog prueba cambios", "Mapa, Ruta") @section("keywords", "ruta, mapa") @section("description", "Blog de rutas")
+            @section("content")<div class="trip-detail"> <div class="container">
             <div class="col-md-9 tab-wrap"> <h2>Blog</h2>
             <div id="shop-detail">  
             </div><ul class="nav nav-tabs" data-toggle="tabs"> <li class="active"><a href="#itenary"></a></li> </ul><div class="tab-content paper-effect"> <div class="tab-pane active" id="itenary"> 

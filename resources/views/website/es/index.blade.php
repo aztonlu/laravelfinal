@@ -1,11 +1,5 @@
 @extends('website.partials.es.main')
 @section('title', 'Ruta')
-@section('keywords', 'agence voyage perou, voyage perou, tour operateur perou, aventure inca perou, agence de voyages au perou, voyage au perou, circuit perou, perou tourisme')
-@section('description', 'Tierras de los Andes: Agence de voyages et Tour opérateur péruvien spécialiste des voyages découverte, aventure, randonnée et trekking en petit groupe et sur mesure')
-
-@section('translate')
-    
-@endsection
 
 @section('content')
 
@@ -618,13 +612,6 @@ footer{
 
 
   <!--fin  del footer-->
-
-
-
-
-
-
-
 
 @endsection
 

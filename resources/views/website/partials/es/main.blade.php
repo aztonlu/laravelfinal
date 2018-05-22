@@ -35,7 +35,6 @@
 </div>
 
 <header class="nav-menu fixed-top">
-@yield('translate')
 
 @include('website.partials.es.nav')
 
@@ -44,7 +43,6 @@
 <br><br><br><br><br><br><br><br><br><br><br>
 @include('website.partials.es.slider')
 @yield('content')
-<!--@include('website.partials.footer')-->
 
 <script type="text/javascript" src="{{url('')}}/vendor/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/vendor/jqueryui/jquery-ui-1.10.3.custom.min.js"></script>

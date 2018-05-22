@@ -1,28 +1,6 @@
 @extends('website.partials.es.maintrip')
-@section('title', 'Trésors du sud Pérou')
-@section('keywords', 'machu picchu, agence voyage, voyage de noce, circuit perou, voyage perou, voyage au perou, perou, nomade aventure, le perou, lac titicaca, tour operateur, Agence de voyages au Pérou')
-@section('description', 'From the coast to Machu Picchu, this trip combines the main sites of Peru. You will start on the coast with the Ballestas Islands and the Huacachina oasis as well as Nasca and its mysterious lines. You will then continue your journey visiting the beautiful city of Arequipa and the Colca Canyon before heading for Lake Titicaca. Your trip will end with the must-see Cusco region and its Inca sites including the most famous place, the majestic citadel Machu Picchu.')
+@section('title', 'Mapa')
 
-@section('translate')
-
-    <!--<div class="top-header">
-        <div class="wrap-top">
-            <div class="info-top pull-left">
-                <small class="top-element"><strong><a href="#">Info: terandes@terandes.com</a></strong></small>
-                <small class="top-element"><a href="#">Appelez-nous maintenant: 00 51 84 247277</a></small>
-            </div>
-           <div class="language-top pull-right">
-                <small class="top-element-language">Langue:</small>
-                <a class="route-language" href="{{url('')}}/fr/tours/decouverte"><img class="img-lng" src="{{url('')}}/img/lng/fr.png" alt="Idioma"></a>
-                <a class="route-language" href="{{url('')}}/en/tours/decouverte"><img class="img-lng" src="{{url('')}}/img/lng/en.png" alt="Idioma"></a>
-                <a class="route-language" href="{{url('')}}/es/tours/decouverte"><img class="img-lng" src="{{url('')}}/img/lng/es.png" alt="Idioma"></a>
-                <a class="route-language" href="{{url('')}}/de/tours/decouverte"><img class="img-lng" src="{{url('')}}/img/lng/de.png" alt="Idioma"></a>
-                <a class="route-language" href="{{url('')}}/it/tours/decouverte"><img class="img-lng" src="{{url('')}}/img/lng/it.png" alt="Idioma"></a>
-            </div>
-        </div>
-    </div>-->
-
-@endsection
 
 @section('content')
 
@@ -34,50 +12,8 @@
                 </div>
         <div class="col-md-9 tab-wrap">
             <!--@foreach($tours as $tour)
-            <h2>{{ $tour->title}}</h2>-->
-
-            <!--<div id="shop-detail">
-
-                 Shop item / START -->
-                <!--<div class="shop-item">
-
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height: 450px">
-                    	<ol class="carousel-indicators">
-					      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					       @foreach($images as $gallery)
-                            <li data-target="#myCarousel" data-slide-to="0"></li>
-                            @endforeach
-					      
-					    </ol>
-					    <div class="carousel-inner">
-					      <div class="item active">
-					        <img src="{{url('')}}/{{ $tour->coverpage }}"  style="width:100%; height: 450px;">
-					      </div>
-					      
-					      @foreach($images as $gallery)
-						      <div class="item">
-						        <img src="{{url('')}}/{{ $gallery->routeImage }}" style="width:100%; height: 450px;">
-						      </div>
-						      
-					    	@endforeach
-					      
-					    </div>
-					    <!-- Left and right controls 
-					    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-					      <span class="glyphicon glyphicon-chevron-left"></span>
-					      <span class="sr-only">Previous</span>
-					    </a>
-					    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-					      <span class="glyphicon glyphicon-chevron-right"></span>
-					      <span class="sr-only">Next</span>
-					    </a>
-                    </div>
-
-
-                </div><!-- Shop item / END 
-
+            <h2>{{ $tour->title}}</h2>
             </div>-->
-
             <div class="description">
                 <!--AQUI COMIENZA EL CODIGO DE MAPA!! -->
 
@@ -192,7 +128,7 @@
                     ];
 
                     var map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 4,
+                        zoom: 6,
                         center: {lat: -16.894652, lng: -70.8394439},
                         styles: styleArray,
                         scrollwheel:  false,
@@ -243,7 +179,7 @@
 
             </script>
 
-            <div id="map" style="height: 200px"></div>
+            <div id="map" style="height: 300px"></div>
 
                 <!--AQUI ESTOY COMENTANDO EL ANTERIOR CODIGO
                 <h3>En quelques mo.2121321ts...</h3>
@@ -262,73 +198,16 @@
                 <a class="a2a_button_google_plus"></a>
                 <a class="a2a_button_pinterest"></a>
             </div>
-            <!--<div class="tab-content paper-effect">
-                <div class="tab-pane active" id="itenary">
-                    @foreach($galleries as $gallery)
-                    <div class="row day-description-content">
-                        <div class="col-sm-4">
-                            <img src="{{url('')}}/{{ $gallery->routeImage}}" class="img-day" alt="">
-                        </div>
-                        <div class="col-sm-8">
-                            <h4 class="text-success">{{ $gallery->name }}</h4>
-                            <p>{{ $gallery->description }}</p>
-
-                            <!--<div class="day-description">
-                                <div class="etapes"><strong><span class="icon-location"></span> Etapes: </strong> 
-                                  
-                                   @for ($i = 0; $i < count($etapes); $i++)
-                                        @if($gallery->id == $etapes[$i]->id_tour_gallery)
-                                            <span class="city">{{ $etapes[$i]->nameEtape }}</span>
-                                        @endif
-                                   @endfor
-                                </div>
-                                <div class="hotel"><strong><span class="icon-moon"></span> Hébergement: </strong> <a href="#" target="_new">{{ $gallery->stay }}</a></div>
-                                <div class="transfer"><strong><span class="icon-bus"></span> Transfert: </strong>{{ $gallery->transport }}</div>
-                            </div>-->
-
-                        <!--</div>
-                    </div>
-                    @endforeach
-                    
-
-                    <h4>FIN DES NOS SERVICES</h4>
-
-                </div>
-
-                <!--<div class="tab-pane" id="overview">
-                    <div class="row">
-                        @foreach($organizations as $orga)
-                        <div class="col-sm-12">
-                            <h4>{{ $orga->name}}</h4>
-                            <p>{{ $orga->description }}</p>
-                            <br>
-                        </div>
-                        @endforeach
-                    </div>
-                </div>
-
-                
-
-            </div>-->
+            
         </div>
 
         <div class="col-md-3 tab-wrap tab-wrap-aside" style="margin-top: 0;">
             <div class="section-title-aside left">
                 <h4 style="color: green">RESERVAR</h4>
             </div>
-            <!--<div class="resume">
-                <small>Apartir de:</small><span class="pd price-cat"><i class="icon-money"></i> USD {{ $tours[0]->price}}</span>
-            </div>
-            <div class="resume">
-                <small>Jours:</small><span class="pd days"><i class="icon-sun"></i>{{ $tours[0]->days}} J / <i class="icon-moon"></i>{{ $tours[0]->days - 1}} N</span>
-            </div>-->
+           
             <div class="content-buy">
-                <!--<div class="content-categories">
-                    <div class="categories"><i class="icon-mountain"></i> <strong>Altitude:</strong></div><div class="categorie-detail"> 4500 msnm</div>
-                    <div class="categories"><i class="icon-shoe"></i> <strong>Niveau:</strong></div><div class="categorie-detail"> {{ $tours[0]->difficulty }}</div>
-                    <div class="categories"><i class="icon-backpack"></i> <strong>Séjour:</strong></div><div class="categorie-detail"> {{ $tours[0]->category }}</div>
-                    <div class="categories"><i class="icon-hand-like"></i> <strong>Confort:</strong></div><div class="categorie-detail"> <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-half"></i></div>
-                </div>-->
+               
                 <button class="btn btn-info" data-toggle="modal" data-target="#myQestion">REGISTRO<span class="icon-chat"></span></button>
                 <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">RESERVAS</button>
                 
@@ -340,43 +219,6 @@
         </div>
     </div>
 </div>
-
-
-
-
-<!--<div class="modal fade modal-book-now" id="myBuy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Formulario de registro</h4>
-            </div>
-            <div class="modal-body">
-
-                <div class="preview-wrap">
-                    <div class="preview-img" style="background-image: url('{{url('')}}/img/pay-img.jpg')"></div>
-
-                    <div class="form-wrap">
-                        <h4 class="text-center">Choisissez le mode de paiement:</h4>
-                        <div style="width: 49%; display: inline-block; padding: 1em;">
-                            <img src="{{url('')}}/img/safetypay.png" alt="" style="width: 100%;">
-                        </div>
-                        <div style="width: 49%; display: inline-block; padding: 1em;">
-                            <img src="{{url('')}}/img/transferwise.png" alt="" style="width: 100%;">
-                        </div>
-
-                        <div style="width: 49%; display: inline-block; padding: 1em;">
-                            <img src="{{url('')}}/img/paypal.png" alt="" style="width: 100%;">
-                        </div>
-                        <div style="width: 49%; display: inline-block; padding: 1em;">
-                            <img src="{{url('')}}/img/vma.png" alt="" style="width: 100%;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
 
 <div class="modal fade modal-book-now" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog modal-lg" role="document">

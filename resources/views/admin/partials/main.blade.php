@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@yield('title', 'ADMIN TERANDES') | Admin Terandes</title>
+    <title>@yield('title', 'ADMIN') | Admin Rutas</title>
     <meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')"/>
     <!-- Tell the browser to be responsive to screen width -->

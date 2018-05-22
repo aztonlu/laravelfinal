@@ -15,7 +15,7 @@
     <meta name="twitter:card" content="" />
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>@yield('title', 'Decouverte') | Terandes</title>
+    <title>@yield('title', 'Rutas') | Tesis</title>
     <meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')"/>
     <link rel="stylesheet" href="{{url('')}}/css/min/bootstrap.mn.css" media="all" >
@@ -34,14 +34,13 @@
 
 <header class="nav-menu fixed-top">
 
-    @yield('translate')
 
     @include('website.partials.es.nav')
 
 </header>
 
+
 @yield('content')
-@include('website.partials.footer')
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/vendor/jquery/dist/jquery.min.js"></script>
