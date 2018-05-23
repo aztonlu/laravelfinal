@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="es">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
     <meta name="twitter:card" content="" />
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>@yield('title', 'Decouverte') | Terandes2222</title>
+    <title>@yield('title', 'Tesis') | Ruta tesis</title>
     <meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')"/>
     <link rel="stylesheet" href="{{url('')}}/css/min/bootstrap.mn.css" media="all" >
@@ -34,7 +34,6 @@
 
 <header class="nav-menu fixed-top">
 
-    @yield('translate')
 
     @include('website.partials.nav')
 

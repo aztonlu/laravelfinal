@@ -8,13 +8,13 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                User
-                <small>New</small>
+                Usuarios
+                <small>Nuevo</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href=""><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                <li><a href="#">Users</a></li>
-                <li class="active">New</li>
+                <li><a href="#">Usuarios</a></li>
+                <li class="active">Nuevo</li>
             </ol>
         </section>
 
@@ -38,16 +38,16 @@
                         {!! Form::open(['route' => 'users.store','method' => 'POST', 'class'=>'form-horizontal', 'enctype' => 'multipart/form-data']) !!}
                         <div class="box-body">
                             <div class="form-group">
-                                {!! Form::label('name', 'Full Name', ['class'=>'col-sm-2 control-label']) !!}
+                                {!! Form::label('name', 'Nombres', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
-                                    {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Full name', 'required']) !!}
+                                    {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Nombre completo', 'required']) !!}
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 {!! Form::label('email', 'Email', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
-                                    {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'example@terandes.com', 'required']) !!}
+                                    {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'ejemplo@hotmail.com', 'required']) !!}
                                 </div>
                             </div>
 
@@ -79,15 +79,21 @@
                             </div>
 
                             <div class="form-group">
-                                {!! Form::label('type', 'User Type', ['class'=>'col-sm-2 control-label']) !!}
+                                {!! Form::label('type', 'Tipo de usuario', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
-                                    {!! Form::select('type', ['member' => 'Member', 'admin' => 'Administrator'], null, ['class' => 'form-control']) !!}
+                                    {!! Form::select('type', ['member' => 'Miembro', 'admin' => 'Administrador'], null, ['class' => 'form-control']) !!}
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <!--div class="form-group">
                                 {!! Form::label('languageLabel', 'User Language', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                     {!! Form::select('language', ['spanish' => 'Spanish', 'english' => 'English', 'italian' => 'Italian', 'frech' => 'French', 'german' => 'German'], null, ['class' => 'form-control']) !!}
+                                </div>
+                            </div>-->
+                            <div class="form-group">
+                                {!! Form::label('languageLabel', 'Idioma del Usuario', ['class'=>'col-sm-2 control-label']) !!}
+                                <div class="col-sm-10">
+                                    {!! Form::select('language', ['spanish' => 'Spanish'], null, ['class' => 'form-control']) !!}
                                 </div>
                             </div>
                             <div class="form-group">
@@ -99,8 +105,8 @@
                         </div>
                         <!-- /.box-body -->
                         <div class="box-footer">
-                            <a href="{{route('users.index')}}" class="btn btn-default pull-left">Cancel</a>
-                            {!! Form::submit('Register', ['class' => 'btn btn-success pull-right']) !!}
+                            <a href="{{route('users.index')}}" class="btn btn-default pull-left">Cancelar</a>
+                            {!! Form::submit('Registrar', ['class' => 'btn btn-success pull-right']) !!}
                         </div>
                         <!-- /.box-footer -->
                         {!! Form::close() !!}

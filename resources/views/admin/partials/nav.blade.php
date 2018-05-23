@@ -45,7 +45,7 @@
                 </ul>
             </li>
 
-            <li class="treeview">
+            <!--<li class="treeview">
                 <a href="#">
                     <i class="fa fa-map"></i> <span>Tours</span>
                     <span class="pull-right-container">
@@ -70,7 +70,7 @@
                         </ul>
                     </li>
                 </ul>
-            </li>
+            </li>-->
 
             <li><a href="#"><i class="fa fa-envelope"></i> <span>Reservas</span></a></li>
 

@@ -71,8 +71,8 @@
 
                 
 
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
+                <!--<div class="col-lg-3 col-xs-6">
+                    <!-- small box 
                     <div class="small-box bg-aqua">
                         <div class="inner">
                             <h3>00</h3>
@@ -83,7 +83,7 @@
                         </div>
                         <a href="{{route('tours.index')}}" class="small-box-footer">Entrar al módulo <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
-                </div>
+                </div>-->
                 <!-- ./col -->
 
                 <!--<div class="col-lg-3 col-xs-6">
