@@ -44,7 +44,7 @@
                             <div class="form-group">
                                 {!! Form::label('email', 'Email', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
-                                    {!! Form::email('email', $testimonial->email, ['class' => 'form-control', 'placeholder' => 'ejemplo@terandes.com', 'required']) !!}
+                                    {!! Form::email('email', $testimonial->email, ['class' => 'form-control', 'placeholder' => 'ejemplo@hotmail.com', 'required']) !!}
                                 </div>
                             </div>
 
@@ -76,7 +76,7 @@
                                 </div>
                             </div>
                             
-                            <div class="form-group">
+                            <!--<div class="form-group">
                                  {!! Form::label('tour', 'Tour', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                     <select name="tour" class="form-control">
@@ -90,7 +90,7 @@
                                         
                                     </select>
                                 </div>
-                            </div>
+                            </div>-->
                             
                             
                                 <div class="form-group">

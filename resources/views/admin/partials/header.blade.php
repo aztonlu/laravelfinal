@@ -4,7 +4,7 @@
     <header class="main-header">
         <!-- Logo -->
         <a href="{{url('')}}/admin" class="logo">
-            <img src="{{url('')}}/panel/dist/img/admint.png" style="width:100%;" alt="Admin">
+            <img src="{{url('')}}/public/img/logo.png" style="width:100%;" alt="LogoAdmin">
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">

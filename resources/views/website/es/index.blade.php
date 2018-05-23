@@ -366,16 +366,17 @@
                   </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <select name="tour" class="form-control">
-                          @foreach($tours as $tour) 
-                          <option value="{{ $tour->id }}" selected="selected" > {{ $tour->title }} </option> 
-                          @endforeach
+                        <input type="hidden" name="tour" class="form-control" placeholder="--" required="required" value="165">
+                        <select type="hidden" name="tour" class="form-control">
+                          <!--@foreach($tours as $tour) -->
+                          <option value="165" selected="selected" > {{ $tour->title }} </option> 
+                          <!--@endforeach-->
                       </div>
                         </select>
                   </div>   
               </div>
                 
-                     <div class="col-sm-6">
+                     <div class="col-sm-6" type="hidden">
                         <div class="form-group">
                                 {!! Form::label('Iimagen', 'Imagen', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
