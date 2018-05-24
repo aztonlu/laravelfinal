@@ -369,7 +369,7 @@
                         <input type="hidden" name="tour" class="form-control" placeholder="--" required="required" value="165">
                         <select type="hidden" name="tour" class="form-control">
                           <!--@foreach($tours as $tour) -->
-                          <option value="165" selected="selected" > {{ $tour->title }} </option> 
+                          <!--<option value="165" selected="selected" > {{ $tour->title }} </option> 
                           <!--@endforeach-->
                       </div>
                         </select>
