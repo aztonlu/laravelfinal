@@ -429,11 +429,14 @@ Route::group(['prefix' => 'admin'], function (){
     }])->middleware('auth');
 
     
-    
+    //aqui pongo el de reportes
+    Route::resource('report', 'Admin\ReportController');
+    //hasta aqui
     Route::resource('comments','Admin\CommentsController');
 
     Route::resource('reservations','Admin\ReservationsController');
     
+
     Route::resource('tags', 'Admin\TagController');
     Route::get('tags/{id}/destroy', [
         'uses'  => 'Admin\TagController@destroy',

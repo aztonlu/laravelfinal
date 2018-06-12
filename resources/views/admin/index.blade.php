@@ -218,6 +218,21 @@
                         <a href="{{route('tags.index')}}" class="small-box-footer">Entrar al módulo <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-red">
+                        <div class="inner">
+                            <h3>00</h3>
+                            <p>Reportes</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-location"></i>
+                        </div>
+                        <a href="{{route('report.index')}}" class="small-box-footer">Entrar al módulo <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+
 
                 <!--<div class="col-lg-3 col-xs-6">-->
                     <!-- small box -->
