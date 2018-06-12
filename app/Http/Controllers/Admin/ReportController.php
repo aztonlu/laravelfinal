@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Comment;
+use App\Models\Report;
 use DB;
 
 class reportController extends Controller
@@ -17,9 +17,8 @@ class reportController extends Controller
     public function index()
     {
         //
-        $comment = DB::table('tours')
-                    ->join('comments','comments.tour_id','tours.id')
-                    ->select('tours.id','tours.title','comments.*')->get();
+        $comment = DB::table('reservations')
+                    ->select('reservations.id','reservations.names','reservations.email', 'reservations.phone', 'reservations.skype', 'reservations.nationality', 'reservations.checkin', 'reservations.checkout', 'reservations.adults')->get();
         
         return view('admin.report.index')->with('comments',$comment);
     }

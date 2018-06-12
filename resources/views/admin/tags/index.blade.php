@@ -7,12 +7,12 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Tags
-                <small>List</small>
+                Unidades
+                <small>Listado</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Tags</li>
+                <li class="active">Unidades</li>
             </ol>
         </section>
 
@@ -24,9 +24,9 @@
                 </div>
                 <div class="col-xs-12">
                     <div class="box">
-                        <div class="box-header">
+                        <!--<div class="box-header">
                             <a href="{{route('tags.create')}}" class="btn btn-info">New Tag &nbsp; <span class="fa fa-plus-circle"></span></a>
-                        </div>
+                        </div>-->
                         <!-- /.box-header -->
 
                         <div class="box-body">

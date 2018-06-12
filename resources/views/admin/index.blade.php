@@ -210,7 +210,7 @@
                     <div class="small-box bg-red">
                         <div class="inner">
                             <h3>00</h3>
-                            <p>Administrar tags</p>
+                            <p>Reportes Ubicacion</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-location"></i>

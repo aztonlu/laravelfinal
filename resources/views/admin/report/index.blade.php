@@ -1,5 +1,5 @@
 @extends('admin.partials.datatables')
-@section('title', 'Tours')
+@section('title', 'Reportes')
 
 @section('content')
     <!-- Content Wrapper. Contains page content -->
@@ -7,7 +7,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Tours 
+                Reservas 
                 <small>Listado</small>
             </h1>
             <ol class="breadcrumb">
@@ -31,9 +31,13 @@
                                 <thead>
                                 <tr>
                                     <th>Id</th>
-                                    <th>Nombre</th>
+                                    <th>Nombres</th>
                                     <th>E-mail</th>
+                                    <th>Tele&eacute;fono</th>
                                     <th>DNI</th>
+                                    <th>Nacionalidad</th>
+                                    <th>Hora</th>
+                                    <th>Cantidad pasajes</th>
                                     <!--<th>Estado</th>-->
                                 </tr>
                                 </thead>
@@ -41,17 +45,14 @@
                                 @foreach($comments as $comment)
                                     <tr>
                                         <td>{{$comment->id}}</td>
-                                        <td>{{$comment->nameUser}}</td>
+                                        <td>{{$comment->names}}</td>
                                         <td>{{$comment->email}}</td>
-                                        <td>{{$comment->question}}</td>
-                                        <!--<td>&nbsp;&nbsp;&nbsp;
-                                        	@if($comment->status == "")
-                                        	<a href="" style="color:red;"><span class="ion-email-unread"></span></a>
-                                        	@else
-                                        	<a href="" style="color:green;"><span class="ion-email"></span></a>
-                                        	@endif 
-                                        	&nbsp;&nbsp;&nbsp;
-                                        </td>-->
+                                        <td>{{$comment->phone}}</td>
+                                        <td>{{$comment->skype}}</td>
+                                        <td>{{$comment->nationality}}</td>
+                                        <td>{{$comment->checkin}}</td>
+                                        <td>{{$comment->adults}}</td>
+                                        
                                     </tr>
                                 @endforeach
 
@@ -59,9 +60,13 @@
                                 <tfoot>
                                 <tr>
                                     <th>Id</th>
-                                    <th>Nombre</th>
+                                    <th>Nombres</th>
                                     <th>E-mail</th>
+                                    <th>Tele&eacute;fono</th>
                                     <th>DNI</th>
+                                    <th>Nacionalidad</th>
+                                    <th>Hora</th>
+                                    <th>Cantidad pasajes</th>
                                     <!--<th>Estado</th>-->
                                 </tr>
                                 </tfoot>
