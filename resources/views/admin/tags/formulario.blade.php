@@ -60,7 +60,6 @@
                                         <td>{{$tag->longitude}}</td>
                                         <!--<td>&nbsp;&nbsp;&nbsp;<a href="{{route('tags.edit', $tag->id)}}" style="color:#2f99ff;"><span class="ion-edit"></span></a> &nbsp;&nbsp;&nbsp; <a href="{{route('admin.tags.destroy', $tag->id)}}" onclick="return confirm('¿Are you sure to delete a Tag?')" style="color:#ff7677;"><span class="ion-close-circled"></span></a></td>-->
                                         
-                                        
                                     </tr>
 
 
@@ -68,8 +67,6 @@
 
 
                                 @endforeach
-<form action="{{ url('') }}/mostrarReporte" method="POST">
-                      <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-list-alt" align="right"></i></button>
 
                                 </tbody>
                                 <tfoot>

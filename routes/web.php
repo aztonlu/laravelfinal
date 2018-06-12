@@ -431,6 +431,7 @@ Route::group(['prefix' => 'admin'], function (){
     
     //aqui pongo el de reportes
     Route::resource('report', 'Admin\ReportController');
+    Route::post('mostrarReporte','TagController@mostrarReporte');
     //hasta aqui
     Route::resource('comments','Admin\CommentsController');
 
