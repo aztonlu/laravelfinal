@@ -18,6 +18,14 @@
 
 });*/
 
+Route::get('/excelexportar', function () {
+    return \Excel::download(new App\Exports\InvoicesExport, 'invoices.xlsx');
+    //return factory ('App\User',10)->make();
+});
+
+Route::get('importExport', 'MaatwebsiteDemoController@importExport');
+Route::get('downloadExcel/{type}', 'MaatwebsiteDemoController@downloadExcel');
+Route::post('importExcel', 'MaatwebsiteDemoController@importExcel');
 
 
 Route::resource('publictestimonials', 'Home\TestimonialsControllerPublic');

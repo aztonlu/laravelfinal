@@ -183,6 +183,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Anouar\Fpdf\FpdfServiceProvider::class,
+        'Maatwebsite\Excel\ExcelServiceProvider',
 
     ],
 
@@ -235,6 +236,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'Fpdf' => Anouar\Fpdf\Facades\Fpdf::class,
+        'Excel' => 'Maatwebsite\Excel\Facades\Excel',
 
     ],
 
