@@ -6,10 +6,6 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-
-
-
-
 //use Input;
 use App\Item;
 use DB;
@@ -23,7 +19,7 @@ class MaatwebsiteDemoController extends Controller
 	public function downloadExcel($type)
 	{
 		$data = Item::get()->toArray();
-		return Excel::create('itsolutionstuff_example', function($excel) use ($data) {
+		return Excel::create('Informe1', function($excel) use ($data) {
 			$excel->sheet('mySheet', function($sheet) use ($data)
 	        {
 				$sheet->fromArray($data);
@@ -32,7 +28,7 @@ class MaatwebsiteDemoController extends Controller
 	}
 	public function importExcel()
 	{
-		/*if(Input::hasFile('import_file')){
+		if(Input::hasFile('import_file')){
 			$path = Input::file('import_file')->getRealPath();
 			$data = Excel::load($path, function($reader) {
 			})->get();
@@ -42,10 +38,10 @@ class MaatwebsiteDemoController extends Controller
 				}
 				if(!empty($insert)){
 					DB::table('items')->insert($insert);
-					dd('Insert Record successfully.');
+					dd('Insertado correctamente.');
 				}
 			}
 		}
-		return back();*/
+		return back();
 	}
 }
