@@ -8,6 +8,9 @@ use App\Http\Requests;
 
 //use Input;
 use App\Item;
+use App\User;
+use App\Models\Comment;
+use App\Models\Article;
 use DB;
 use Excel;
 class MaatwebsiteDemoController extends Controller
@@ -18,9 +21,29 @@ class MaatwebsiteDemoController extends Controller
 	}
 	public function downloadExcel($type)
 	{
-		$data = Item::get()->toArray();
+		$data = user::get()->toArray();
 		return Excel::create('Informe1', function($excel) use ($data) {
-			$excel->sheet('mySheet', function($sheet) use ($data)
+			$excel->sheet('Hoja1', function($sheet) use ($data)
+	        {
+				$sheet->fromArray($data);
+	        });
+		})->download($type);
+	}
+	public function downloadExcelarticulos($type)
+	{
+		$data = article::get()->toArray();
+		return Excel::create('Informe1', function($excel) use ($data) {
+			$excel->sheet('Hoja1', function($sheet) use ($data)
+	        {
+				$sheet->fromArray($data);
+	        });
+		})->download($type);
+	}
+	public function downloadExcelcomentarios($type)
+	{
+		$data = comment::get()->toArray();
+		return Excel::create('Informe1', function($excel) use ($data) {
+			$excel->sheet('Hoja1', function($sheet) use ($data)
 	        {
 				$sheet->fromArray($data);
 	        });

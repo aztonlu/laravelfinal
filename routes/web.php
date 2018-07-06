@@ -25,6 +25,8 @@ Route::get('/excelexportar', function () {
 
 Route::get('importExport', 'MaatwebsiteDemoController@importExport');
 Route::get('downloadExcel/{type}', 'MaatwebsiteDemoController@downloadExcel');
+Route::get('downloadExcelcomentarios/{type}', 'MaatwebsiteDemoController@downloadExcelcomentarios');
+Route::get('downloadExcelarticulos/{type}', 'MaatwebsiteDemoController@downloadExcelarticulos');
 Route::post('importExcel', 'MaatwebsiteDemoController@importExcel');
 
 
@@ -33,7 +35,7 @@ Route::resource('publicusers', 'Home\UserControllerPublic');
 
 
 Route::resource('publicnewsletters', 'Home\NewslettersControllerPublic');
- 
+
 Route::get('/qui-sommes-nous', function () {
         return view('website.fr.qui-sommes-nous');
     });
@@ -356,7 +358,7 @@ Route::group(['prefix' => 'tours'], function (){
         return view('website.fr.tours.aventure.aventure');
     });
     Route::get('/decouverte/{categoryf}','TourControllerWeb@index');
-    
+
     /* Decouverte */
 
    /* Route::get('/decouverte', function () {
@@ -436,7 +438,7 @@ Route::group(['prefix' => 'admin'], function (){
         return view('admin.index');
     }])->middleware('auth');
 
-    
+
     //aqui pongo el de reportes
     Route::resource('report', 'Admin\ReportController');
     Route::post('mostrarReporte','TagController@mostrarReporte');
@@ -444,7 +446,7 @@ Route::group(['prefix' => 'admin'], function (){
     Route::resource('comments','Admin\CommentsController');
 
     Route::resource('reservations','Admin\ReservationsController');
-    
+
 
     Route::resource('tags', 'Admin\TagController');
     Route::get('tags/{id}/destroy', [
@@ -457,25 +459,25 @@ Route::group(['prefix' => 'admin'], function (){
         'uses'  => 'Admin\NewslettersController@destroy',
         'as'    => 'admin.newsletters.destroy'
     ]);
-    
+
     Route::resource('blogs', 'Admin\BlogsController');
     Route::get('blogs/{id}/destroy', [
         'uses'  => 'Admin\BlogsController@destroy',
         'as'    => 'admin.blogs.destroy'
     ]);
-    
+
     Route::resource('articles', 'Admin\ArticlesController');
     Route::get('articles/{id}/destroy', [
         'uses'  => 'Admin\ArticlesController@destroy',
         'as'    => 'admin.articles.destroy'
     ]);
-    
+
     Route::resource('galleries', 'Admin\GalleriesController');
       Route::get('galleries/{id}/{archivo}/destroy', [
         'uses'  => 'Admin\GalleriesController@destroy',
         'as'    => 'admin.galleries.destroy'
     ]);
-    
+
     Route::resource('users', 'Admin\UsersController');
     Route::get('users/{id}/destroy', [
         'uses'  => 'Admin\UsersController@destroy',
@@ -602,18 +604,16 @@ Route::get('it/blogs/{id}', [
 
 Route::group(['prefix' => '/'], function (){
     Route::get('/', function(){
-        
+
           return redirect('/es');
     });
      Route::get('/{lenguage}', [
         'uses'  => 'Admin\UsersController@indexPrincipal',
         'as'    => 'user.principal'
     ]);
-    
+
     Route::get('/{language}/tours/{category}/{categoryTour}','TourControllerWeb@index');
     Route::get('/{language}/tours/{tour_category}','TourControllerWeb@indexCategory');
 
-    
-});
 
-    
+});
