@@ -23,6 +23,7 @@
             </div>
         </div>
     </div>
+    <!--prueba-->
 
 @endsection
 
@@ -46,7 +47,7 @@
             <div class="tab-content paper-effect">
                 <div class="tab-pane active" id="itenary">
 
-                    
+
 
                     <div class="row day-description-content">
                         <div class="col-sm-4">
@@ -56,8 +57,8 @@
                             <br>
                             <br>
                             <p>Calle Turquezas E-11 <br>
-                            Urb. Kenedy A - CUSCO - PERU<br> 
-                            Tel : 00 51 84 247277<br> 
+                            Urb. Kenedy A - CUSCO - PERU<br>
+                            Tel : 00 51 84 247277<br>
                             Mail : terandes@terandes.com</p>
                         </div>
                         <div class="col-sm-8">
@@ -92,7 +93,7 @@
                             {!! Form::close() !!}
                             </div>
                         </div>
-                            
+
 
                         </div>
                     </div>
