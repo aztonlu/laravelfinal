@@ -114,7 +114,7 @@
                 type="button"
                 class="btn btn-primary btn-lg"
                 data-toggle="modal"
-                data-target="#favoritesModalRegistrese">
+                data-target="#reservarpasajes">
                 Reservar
             </button>
           </div>
@@ -134,56 +134,106 @@
                   <h4 class="modal-title"
                   id="favoritesModalRegistrese" style="color: red">Ingrese sus datos</h4>
                 </div>
-        <div class="modal-body">
-          
+                    <div class="modal-body">
+                        <form id="registrarusuarios" name="contact-form" method="post" action="{{ route('Usuarioregistrado.store') }}" enctype="multipart/form-data">
+                          <?php $url = Request::path();?>
+                          <!--<input type="hidden" name="language" value="Spanish">
+                          <input type="hidden" name="lenguage" value="Spanish">
+                          <input type="hidden" name="type" value="member">
+                          <input type="hidden" name="routeImage" value="users/persona.png">-->
+                          <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <input type="text" name="nombreusuario" class="form-control" placeholder="Nombre" required="required" style="border: 2px solid #e6e6e6;">
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <input type="text" name="dniusuario" class="form-control" placeholder="Dni" required="required" style="border: 2px solid #e6e6e6;">
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <input type="email" name="emailusuario" class="form-control" placeholder="Email" required="required" style="border: 2px solid #e6e6e6;">
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <input type="password" name="password" class="form-control" placeholder="Contraseña" required="required" style="border: 2px solid #e6e6e6;">
+                                </div>
+                              </div>
 
-          <form id="registrarusuarios" name="contact-form" method="post" action="{{ route('Usuarioregistrado.store') }}" enctype="multipart/form-data">
-             <?php $url = Request::path();?>
-              <!--<input type="hidden" name="language" value="Spanish">
-              <input type="hidden" name="lenguage" value="Spanish">
-              <input type="hidden" name="type" value="member">
-              <input type="hidden" name="routeImage" value="users/persona.png">-->
-              <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <input type="text" name="nombreusuario" class="form-control" placeholder="Nombre" required="required" style="border: 2px solid #e6e6e6;">
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <input type="text" name="dniusuario" class="form-control" placeholder="Dni" required="required" style="border: 2px solid #e6e6e6;">
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <input type="email" name="emailusuario" class="form-control" placeholder="Email" required="required" style="border: 2px solid #e6e6e6;">
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <input type="password" name="password" class="form-control" placeholder="Contraseña" required="required" style="border: 2px solid #e6e6e6;">
-                    </div>
-                  </div>
-
-                    <div class="col-sm-6">
-
-                  </div>
-              </div>
-              <div class="form-group">
-                 {{ csrf_field() }}
-                <button type="submit" class="btn-submit">Enviar ahora</button>
-              </div>
-            </form>
-
-        </div>
-
-
+                                <div class="col-sm-6">
+                                </div>
+                          </div>
+                            <div class="form-group">
+                               {{ csrf_field() }}
+                              <button type="submit" class="btn-submit">Enviar ahora</button>
+                            </div>
+                            </form>
+                        </div>
                  </div>
 
 
- </div>
-    </div>
+              </div>
+          </div>
 </div>
+
+<div class="modal fade" id="reservarpasajes"
+      tabindex="-1" role="dialog"
+    aria-labelledby="favoritesModalReservar">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close"
+            data-dismiss="modal"
+            aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title"
+          id="favoritesModalRegistrese" style="color: red">Ingrese los datos</h4>
+        </div>
+            <div class="modal-body">
+                <form id="registrarusuarios" name="contact-form" method="post" action="{{ route('Pasajereservado.store') }}" enctype="multipart/form-data">
+                  <?php $url = Request::path();?>
+
+                  <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input type="text" name="dni" class="form-control" placeholder="Dni" required="required" style="border: 2px solid #e6e6e6;">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input type="text" name="horabus" class="form-control" placeholder="Hora de Bus" required="required" style="border: 2px solid #e6e6e6;">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input type="text" name="paraderopago" class="form-control" placeholder="Paradero a Pagar" required="required" style="border: 2px solid #e6e6e6;">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input type="hidden" name="estado" value="Pendiente">
+                          <!--<input type="hidden"  name="estado" class="form-control" placeholder="Estado" required="required" style="border: 2px solid #e6e6e6;">-->
+                        </div>
+                      </div>
+
+                        <div class="col-sm-6">
+                        </div>
+                  </div>
+                    <div class="form-group">
+                       {{ csrf_field() }}
+                      <button type="submit" class="btn-submit">Enviar ahora</button>
+                    </div>
+                    </form>
+                </div>
+         </div>
+
+
+      </div>
+  </div>
 
 
 

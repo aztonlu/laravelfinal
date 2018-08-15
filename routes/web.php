@@ -37,6 +37,8 @@ Route::resource('publicusers', 'Home\UserControllerPublic');
 //Route::resource('saveusuarioregistrado','Home\UsuarioregistradoController@store');
 Route::resource('Usuarioregistrado', 'Home\UsuarioregistradoController');
 //
+Route::resource('Pasajereservado', 'Home\ReservaasientoController');
+//
 
 Route::resource('publicnewsletters', 'Home\NewslettersControllerPublic');
 
