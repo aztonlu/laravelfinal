@@ -7,7 +7,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Reservas 
+                Reservas
                 <small>Listado</small>
             </h1>
             <ol class="breadcrumb">
@@ -71,7 +71,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-                    
+
                         </div>
                         <!-- /.box-body -->
                     </div>

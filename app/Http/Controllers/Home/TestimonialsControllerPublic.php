@@ -29,11 +29,11 @@ class TestimonialsControllerPublic extends Controller
     public function blogsEnglish($id){
         return view('website.en.blogs.'. $id);
     }
-    
+
     public function store(Request $request){
         $file = $request->file('imagen');
         if($file != ""){
-            
+
             $random = str_random(15);
             $nombre = trim('testimonial/'.$random.".png");
             $image = Image::make($file->getRealPath())->resize(262, 287);
@@ -42,7 +42,7 @@ class TestimonialsControllerPublic extends Controller
             //depende al SO
             //$salida = shell_exec("/home/luis-ernesto/pngquant.git/pngquant ".$nombre);
             $salida = shell_exec("./pngquant/pngquant ".$nombre);
-            $cadena = "";       
+            $cadena = "";
             $cadena = substr($nombre, 0, 27);
             $cadena = $cadena."-fs8.png";
             chmod($cadena, 775);
@@ -52,7 +52,7 @@ class TestimonialsControllerPublic extends Controller
         else {
             $cadena = "users/persona.png";
         }
-        
+
         $testimonial = new Testimonial($request->all());
         switch($request->language){
             case 'fr':

@@ -94,52 +94,69 @@
             </div>
           </div>
         </div>
-        
+
         </div>
       </div>
     </div>
 
-      <div class="heading text-center col-sm-8 col-sm-offset-2"style="padding-top: 35px">
-          <button 
-              type="button" 
-              class="btn btn-primary btn-lg" 
-              data-toggle="modal" 
-              data-target="#favoritesModalRegistrese">
+      <div class="heading text-center col-sm-12"style="padding-top: 35px">
+          <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-toggle="modal"
+              data-target="#registrarusuarios">
               Registrese
           </button>
         </div>
 
+        <div class="heading text-center col-sm-16"style="padding-top: 35px">
+            <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                data-toggle="modal"
+                data-target="#favoritesModalRegistrese">
+                Reservar
+            </button>
+          </div>
 
-        <div class="modal fade" id="favoritesModalRegistrese" 
-              tabindex="-1" role="dialog" 
+
+        <div class="modal fade" id="registrarusuarios"
+              tabindex="-1" role="dialog"
             aria-labelledby="favoritesModalRegistrese">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="close" 
-                    data-dismiss="modal" 
+                  <button type="button" class="close"
+                    data-dismiss="modal"
                     aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                  <h4 class="modal-title" 
+                  <h4 class="modal-title"
                   id="favoritesModalRegistrese" style="color: red">Ingrese sus datos</h4>
                 </div>
-        <div class="modal-body"> 
-          <form id="main2-contact-form" name="contact-form" method="post" action="{{ route('publicusers.store') }}" enctype="multipart/form-data">
+        <div class="modal-body">
+          
+
+          <form id="registrarusuarios" name="contact-form" method="post" action="{{ route('Usuarioregistrado.store') }}" enctype="multipart/form-data">
              <?php $url = Request::path();?>
-              <input type="hidden" name="language" value="Spanish">
+              <!--<input type="hidden" name="language" value="Spanish">
               <input type="hidden" name="lenguage" value="Spanish">
               <input type="hidden" name="type" value="member">
-              <input type="hidden" name="routeImage" value="users/persona.png">
+              <input type="hidden" name="routeImage" value="users/persona.png">-->
               <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" name="name" class="form-control" placeholder="Nombre" required="required" style="border: 2px solid #e6e6e6;">
+                      <input type="text" name="nombreusuario" class="form-control" placeholder="Nombre" required="required" style="border: 2px solid #e6e6e6;">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="email" name="email" class="form-control" placeholder="Email" required="required" style="border: 2px solid #e6e6e6;">
+                      <input type="text" name="dniusuario" class="form-control" placeholder="Dni" required="required" style="border: 2px solid #e6e6e6;">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="email" name="emailusuario" class="form-control" placeholder="Email" required="required" style="border: 2px solid #e6e6e6;">
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -147,22 +164,22 @@
                       <input type="password" name="password" class="form-control" placeholder="Contraseña" required="required" style="border: 2px solid #e6e6e6;">
                     </div>
                   </div>
-                    
+
                     <div class="col-sm-6">
-                     
-                  </div>   
+
+                  </div>
               </div>
-                
-                     
+              <div class="form-group">
+                 {{ csrf_field() }}
+                <button type="submit" class="btn-submit">Enviar ahora</button>
+              </div>
+            </form>
+
         </div>
-                
-                <div class="form-group">
-                   {{ csrf_field() }}
-                  <button type="" class="btn-submit">Enviar ahora</button>
-                </div>
-              </form>
+
+
                  </div>
-     
+
 
  </div>
     </div>
@@ -179,11 +196,11 @@
   </section>
   <br><br><br><br>
 
-        
+
 
 
   <section id="twitter" class="parallax"style="padding-top: 5px">
-     
+
     <div id="blogspace">
       <a class="twitter-left-control" href="#twitter-carousel" role="button" data-slide="prev" style="margin-top: -160px;"><i class="fa fa-angle-left"></i></a>
       <a class="twitter-right-control" href="#twitter-carousel" role="button" data-slide="next" style="margin-top: -160px;"><i class="fa fa-angle-right"></i></a>
@@ -241,14 +258,14 @@
                     @endfor
                 </ol>
                 <div class="carousel-inner">
-                    @for($i = 0; $i < count($testimonials); $i += 3) 
+                    @for($i = 0; $i < count($testimonials); $i += 3)
                     @if($i==0)
                     <div class="item active">
                     @else
                     <div class="item">
                     @endif
                     @if($i<count($testimonials))
-                    <div class="col-sm-4">    
+                    <div class="col-sm-4">
                     <div class="post-thumb">
                       <a href="#"><img class="img-responsive" src="{{$testimonials[$i]->photo}}" alt=""></a>
                       </div>
@@ -264,7 +281,7 @@
                     @endif
                     @if($i+1<count($testimonials))
                         <div class="col-sm-4">
-                        
+
                     <div class="post-thumb">
                       <a href="#"><img class="img-responsive" src="{{$testimonials[$i+1]->photo}}" alt=""></a>
                       </div>
@@ -280,7 +297,7 @@
                     @endif
                     @if($i+2<count($testimonials))
                         <div class="col-sm-4">
-                        
+
                     <div class="post-thumb">
                       <a href="#"><img class="img-responsive" src="{{$testimonials[$i+2]->photo}}" alt=""></a>
                       </div>
@@ -295,16 +312,16 @@
                   </div>
                     @endif
                     </div>
-                    
+
                  @endfor
                 </div>
-                       
+
               </div>
 
             </div>
-          
+
           </div>
-          
+
 
       </div>
 
@@ -316,28 +333,28 @@
     </div>
         <div class="heading text-center col-sm-8 col-sm-offset-2">
             <br><br>
-          <button 
-              type="button" 
-              class="btn btn-primary btn-lg" 
-              data-toggle="modal" 
+          <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-toggle="modal"
               data-target="#favoritesModal">
               Ingrese su testimonio
           </button>
         </div>
-<div class="modal fade" id="favoritesModal" 
-     tabindex="-1" role="dialog" 
+<div class="modal fade" id="favoritesModal"
+     tabindex="-1" role="dialog"
      aria-labelledby="favoritesModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" 
-          data-dismiss="modal" 
+        <button type="button" class="close"
+          data-dismiss="modal"
           aria-label="Close">
           <span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" 
+        <h4 class="modal-title"
         id="favoritesModalLabel" style="color: red">Ingrese su testimonio</h4>
       </div>
-             <div class="modal-body"> 
+             <div class="modal-body">
 
           <form id="main2-contact-form" name="contact-form" method="post" action="{{ route('publictestimonials.store') }}" enctype="multipart/form-data">
              <?php $url = Request::path();?>
@@ -358,7 +375,7 @@
                     <div class="form-group">
                       <input type="date" name="date" class="form-control" placeholder="Date" required="required" style="border: 2px solid #e6e6e6;">
                     </div>
-                           </div>   
+                           </div>
                     <div class="col-sm-6">
                     <div class="form-group">
                       <input type="text" name="nationality" class="form-control" placeholder="Nacionalidad" required="required" style="border: 2px solid #e6e6e6;">
@@ -369,13 +386,13 @@
                         <input type="hidden" name="tour" class="form-control" placeholder="--" required="required" value="165">
                         <select type="hidden" name="tour" class="form-control">
                           <!--@foreach($tours as $tour) -->
-                          <!--<option value="165" selected="selected" > {{ $tour->title }} </option> 
+                          <!--<option value="165" selected="selected" > {{ $tour->title }} </option>
                           <!--@endforeach-->
                       </div>
                         </select>
-                  </div>   
+                  </div>
               </div>
-                
+
                      <div class="col-sm-6" type="hidden">
                         <div class="form-group">
                                 {!! Form::label('Iimagen', 'Imagen', ['class'=>'col-sm-2 control-label']) !!}
@@ -393,7 +410,7 @@
                 </div>
               </form>
                  </div>
-     
+
 
  </div>
     </div>
@@ -404,25 +421,25 @@
 
   <section id="map-section" style="padding-top: 8%;">
     <br>
-    
+
       <center>
         <h2>Contactenos</h2>
       </center>
       <br>
-      
-      
-          
+
+
+
       </div>
       <div class="heading text-center col-sm-8 col-sm-offset-2">
-<button 
-   type="button" 
-   class="btn btn-primary btn-lg" 
-   data-toggle="modal" 
+<button
+   type="button"
+   class="btn btn-primary btn-lg"
+   data-toggle="modal"
    data-target="#contactModal">
   Contactenos
 </button>
 </div>
-      
+
 </section>
 
   <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" style="bottom:150px;">
@@ -433,78 +450,74 @@
 </div>
 
 @section('mapas')
-    
+
 
 
 <section id="map-section" >
-    
+
       <center>
         <h2>Rutas</h2>
       </center>
-      
+
       <div class="col-sm-12">
-          
-          
+
+
           <div class="col-sm-6">
-            
+
             <div class="panel panel-default">
               <div class="panel-body">
                 <center>
-                   <div id="google-map" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms"></div> 
+                   <div id="google-map" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
                 </center>
               </div>
               <div class="panel-footer" style="color: #000;">
                 <p> Ruta ida</p>
               </div>
             </div>
-            
-            
+
+
           </div>
 
           <div class="col-sm-6">
-            
+
             <div class="panel panel-default">
               <div class="panel-body">
-                
+
                   <div id="google-map1" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
-                
+
               </div>
               <div class="panel-footer" style="color: #000;">
                 <p> Ruta vuelta</p>
               </div>
             </div>
-            
-            
+
+
           </div>
 
-          
+
       </div>
-      
-      
-    
+
+
+
 </section>
 @endsection
 
-<div class="modal fade" id="contactModal" 
-     tabindex="-1" role="dialog" 
+<div class="modal fade" id="contactModal"
+     tabindex="-1" role="dialog"
      aria-labelledby="favoritesModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" 
-          data-dismiss="modal" 
+        <button type="button" class="close"
+          data-dismiss="modal"
           aria-label="Close">
           <span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" 
-        id="favoritesModalLabel">Contactenos</h4>
+        <h4 class="modal-title"
+        id="favoritesModalLabel" style="color: red"> Contactenos</h4>
       </div>
-             <div class="modal-body"> 
+             <div class="modal-body">
 
      <div style="padding:0 5 5 5">
-          <h3>Contactenos</h3>
-          <p></p>
-        
-                 <br>
           <form id="main2-contact-form" name="contact-form" method="post" action="{{ route('publictestimonials.store') }}" enctype="multipart/form-data">
              <?php $url = Request::path();?>
               <input type="hidden" name="language" value="{{$url}}">
@@ -520,12 +533,12 @@
                       <input type="email" name="email" class="form-control" placeholder="Email" required="required" style="border: 2px solid #e6e6e6;">
                     </div>
                   </div>
-                     
+
                     <div class="col-sm-6">
                       <div class="form-group">
                         <input type="text" name="nationality" class="form-control" placeholder="Nacionalidad" required="required" style="border: 2px solid #e6e6e6;">
                       </div>
-                  </div>     
+                  </div>
               </div>
       </div>
                 <div class="form-group">
@@ -536,7 +549,7 @@
                 </div>
               </form>
                  </div>
-     
+
 
  </div>
     </div>
@@ -554,7 +567,7 @@
 <style>
   h4{
     color: #fff;
-    
+
   }
   a{
     color: #000;
@@ -578,43 +591,40 @@ footer{
 <!--inicio del footer-->
 
  <footer >
-            
+
     <div class="footer-top wow fadeInUp animated" style="padding-top: 0px;" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInUp;background-color: rgb(13,52,14)">
-        
-        
+
+
 
 <div class="container-fluid">
   <div class="row" style="text-align: center; color: white;">
- 
+
      <div class="col-xs-12 col-md-8">
       <div class="row" sty>
-       
-        
+
+
      <div class="col-xs-12 col-md-4">
             <h2><strong>Suscribete</strong></h2>
-        
+
             <h5 style="color: #fff;">Suscríbase para tener noticias y notificaciones nuevas</h5>
-          
+
               <form action="{{route('publicnewsletters.store')}}" method="post">
             {{ csrf_field() }}
               <?php $url = Request::path();?>
               <input type="hidden" name="language" value="{{$url}}">
               <input name='email' placeholder='example@mail.com' class="form-control text-center" type="email" style="width:90%">
               <button type="submit" class="btn-submit text-center" style="width:90%">Suscribirme ahora</button>
-                  
+
           </form>
-           
+
     </div>
   </div>
 </div>
     </div>
-    
+
   </footer>
 
 
   <!--fin  del footer-->
 
 @endsection
-
-
-

@@ -28,19 +28,19 @@ class UserControllerPublic extends Controller
     public function blogsEnglish($id){
         return view('website.en.blogs.'. $id);
     }
-    
+
     public function store(UsersRequest $request)
     {
         $file = $request->file('imagen');
         if($file != ""){
-            
+
             $random = str_random(15);
             $nombre = trim('users/'.$random.".png");
             $image = Image::make($file->getRealPath())->resize(262, 287);
-            
+
             $image->save($nombre);
             $salida = shell_exec("./pngquant/pngquant ".$nombre);
-            $cadena = "";       
+            $cadena = "";
             $cadena = substr($nombre, 0, 21);
             $cadena = $cadena."-fs8.png";
                     unlink($nombre);
@@ -49,7 +49,7 @@ class UserControllerPublic extends Controller
         else {
             $cadena = "users/persona.png";
         }
-        
+
         $user = new User($request->all());
         $user->password = bcrypt($request->password);
         $user->routeImage = $cadena;
@@ -62,4 +62,3 @@ class UserControllerPublic extends Controller
         return redirect()->route('users.index');
     }
 }
-

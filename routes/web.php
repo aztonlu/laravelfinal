@@ -33,6 +33,10 @@ Route::post('importExcel', 'MaatwebsiteDemoController@importExcel');
 Route::resource('publictestimonials', 'Home\TestimonialsControllerPublic');
 Route::resource('publicusers', 'Home\UserControllerPublic');
 
+//
+//Route::resource('saveusuarioregistrado','Home\UsuarioregistradoController@store');
+Route::resource('Usuarioregistrado', 'Home\UsuarioregistradoController');
+//
 
 Route::resource('publicnewsletters', 'Home\NewslettersControllerPublic');
 
@@ -325,6 +329,13 @@ Route::get('/contacto2-it', function () {
 Route::get('/contacto2', function () {
         return view('contacto2');
     });
+
+
+
+
+
+
+
 Route::post('updateGallery','Admin\ToursController@updateGallery');
 Route::post('saveJournal','Admin\ToursController@saveJournal');
 Route::post('saveImageTour','Admin\ToursController@saveImageTour');
