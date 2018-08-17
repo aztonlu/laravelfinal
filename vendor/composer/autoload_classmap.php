@@ -23,6 +23,8 @@ return array(
     'AddTypeTable' => $baseDir . '/database/migrations/2017_10_12_060537_add_type_table.php',
     'CreateArticleTable' => $baseDir . '/database/migrations/2017_10_08_171606_create_article_table.php',
     'CreateBlogTable' => $baseDir . '/database/migrations/2017_10_08_231556_create_blog_table.php',
+    'CreateBusesTable' => $baseDir . '/database/migrations/2018_08_17_233429_create_buses_table.php',
+    'CreateConductoresTable' => $baseDir . '/database/migrations/2018_08_17_231515_create_conductores_table.php',
     'CreateEtapegalleriesTable' => $baseDir . '/database/migrations/2017_10_07_154834_create_etapegalleries_table.php',
     'CreateItemsTable' => $baseDir . '/database/migrations/2018_06_20_183642_create_items_table.php',
     'CreateNewslettersTable' => $baseDir . '/database/migrations/2017_10_09_015357_create_newsletters_table.php',
