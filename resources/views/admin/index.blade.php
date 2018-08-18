@@ -120,6 +120,20 @@
                     <div class="small-box bg-red-gradient">
                         <div class="inner">
                             <h3>00</h3>
+                            <p>Registrar Buses</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-email"></i>
+                        </div>
+                        <a href="{{route('buses.index')}}" class="small-box-footer">Entrar al módulo <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-red-gradient">
+                        <div class="inner">
+                            <h3>00</h3>
                             <p>Atender reservas</p>
                         </div>
                         <div class="icon">

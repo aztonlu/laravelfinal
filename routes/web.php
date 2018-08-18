@@ -506,6 +506,12 @@ Route::group(['prefix' => 'admin'], function (){
     ]);
     //
 
+    Route::resource('buses', 'Admin\BusesController');
+    Route::get('buses/{id}/destroy', [
+        'uses'  => 'Admin\BusesController@destroy',
+        'as'    => 'admin.buses.destroy'
+    ]);
+
 
 
 
