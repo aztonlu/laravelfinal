@@ -497,6 +497,18 @@ Route::group(['prefix' => 'admin'], function (){
         'as'    => 'admin.users.destroy'
     ]);
 
+
+    //
+    Route::resource('conductores', 'Admin\ConductoresController');
+    Route::get('conductores/{id}/destroy', [
+        'uses'  => 'Admin\ConductoresController@destroy',
+        'as'    => 'admin.conductores.destroy'
+    ]);
+    //
+
+
+
+
     Route::resource('categories', 'Admin\CategoriesController');
     Route::get('categories/{id}/destroy', [
         'uses'  => 'Admin\CategoriesController@destroy',

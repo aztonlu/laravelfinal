@@ -69,10 +69,10 @@
                 </div>
                 <!-- ./col -->
 
-                
+
 
                 <!--<div class="col-lg-3 col-xs-6">
-                    <!-- small box 
+                    <!-- small box
                     <div class="small-box bg-aqua">
                         <div class="inner">
                             <h3>00</h3>
@@ -106,6 +106,20 @@
                     <div class="small-box bg-red-gradient">
                         <div class="inner">
                             <h3>00</h3>
+                            <p>Registrar conductores</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-email"></i>
+                        </div>
+                        <a href="{{route('conductores.index')}}" class="small-box-footer">Entrar al módulo <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-red-gradient">
+                        <div class="inner">
+                            <h3>00</h3>
                             <p>Atender reservas</p>
                         </div>
                         <div class="icon">
@@ -131,7 +145,7 @@
                 </div>
                 <!-- ./col -->
 
-                
+
                 <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-purple">
                         <div class="inner">
@@ -230,7 +244,7 @@
                             <i class="ion ion-location"></i>
                         </div>
                         <!--<a href="{{route('report.index')}}" class="small-box-footer">Entrar al módulo <i class="fa fa-arrow-circle-right"></i></a>-->
-                        
+
                         <a href="{{url('')}}/importExport" class="small-box-footer">Exportar</a>
                         <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
