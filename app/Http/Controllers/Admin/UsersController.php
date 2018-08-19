@@ -56,8 +56,8 @@ class UsersController extends Controller
                     break;
         }
     }
-    
-    
+
+
 
     public function create()
     {
@@ -68,14 +68,14 @@ class UsersController extends Controller
     {
         $file = $request->file('imagen');
         if($file != ""){
-            
+
             $random = str_random(15);
             $nombre = trim('users/'.$random.".png");
             $image = Image::make($file->getRealPath())->resize(262, 287);
-            
+
             $image->save($nombre);
             $salida = shell_exec("./pngquant/pngquant ".$nombre);
-            $cadena = "";       
+            $cadena = "";
             $cadena = substr($nombre, 0, 21);
             $cadena = $cadena."-fs8.png";
                     unlink($nombre);
@@ -84,7 +84,7 @@ class UsersController extends Controller
         else {
             $cadena = "users/persona.png";
         }
-        
+
         $user = new User($request->all());
         $user->password = bcrypt($request->password);
         $user->routeImage = $cadena;
@@ -117,12 +117,12 @@ class UsersController extends Controller
     public function update(Request $request, $id)
     {
         $user = User::find($id);
-        
+
         $user->fill($request->all());
         $user->save();
         flash('Se actualizó "'.$user->name.'" satisfactoriamente!', 'success')->important();
         return redirect()->route('users.index');
-    
+
     }
 
 

@@ -37,4 +37,34 @@ class BusesController extends Controller
       return redirect()->route('buses.index');
   }
 
+  public function edit($id)
+  {
+      $user = Buses::find($id);
+      return view('admin.buses.edit')->with('buses', $user);
+  }
+
+  public function update(Request $request, $id)
+  {
+      $user = Buses::find($id);
+
+      $user->fill($request->all());
+      $user->save();
+      flash('Se actualizó el bus con Placa "'.$user->placa.'" satisfactoriamente!', 'success')->important();
+      return redirect()->route('buses.index');
+
+  }
+
+  public function destroy($id)
+  {
+      $user = Buses::find($id);
+      $user->delete();
+
+      flash('Se elimino el bus con Placa "'.$user->placa.'" a sido borrado de forma exitosa!', 'danger')->important();
+      return redirect()->route('users.index');
+  }
+
+
+
+
+
 }
