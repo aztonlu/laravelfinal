@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
-    
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="" />
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="{{url('')}}/font/font-awesome/css/font-awesome.css" media="all" >
     <link rel="stylesheet" href="{{url('')}}/css/main.css" media="all">
     <script type="text/javascript" src="{{url('')}}/vendor/js-cookie/src/js.cookie.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBePR4dRrkGcJp5Nm1N09g3kTeJr_6mPB4"></script>   
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBePR4dRrkGcJp5Nm1N09g3kTeJr_6mPB4"></script>
 
 </head>
 <body>
@@ -39,10 +39,12 @@
 @include('website.partials.es.nav')
 
 </header>
-@yield('mapas')
-<br><br><br><br><br><br><br><br><br><br><br>
 @include('website.partials.es.slider')
+@yield('mapas')
 @yield('content')
+
+
+
 
 <script type="text/javascript" src="{{url('')}}/vendor/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/vendor/jqueryui/jquery-ui-1.10.3.custom.min.js"></script>
@@ -106,11 +108,11 @@
         marker1.addListener('click', function() {
           infowindow1.open(map1, marker1);
         });
-        
+
       }
-      
+
     </script>
-    
+
 <script type="text/javascript" src="{{url('')}}/js/min/map.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/js/min/tripdetailpage.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/js/min/home.min.js"></script>
