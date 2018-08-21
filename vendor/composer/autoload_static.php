@@ -376,6 +376,7 @@ class ComposerStaticInitf7af536901be80e18a62d6d72cde4097
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateReservaasientoTable' => __DIR__ . '/../..' . '/database/migrations/2018_08_15_185016_create_reservaasiento_table.php',
         'CreateTagsTable' => __DIR__ . '/../..' . '/database/migrations/2017_10_04_181323_create_tags_table.php',
+        'CreateTransaccionTable' => __DIR__ . '/../..' . '/database/migrations/2018_08_21_001134_create_transaccion_table.php',
         'CreateUserNewslettersTable' => __DIR__ . '/../..' . '/database/migrations/2017_10_09_171731_create_user_newsletters_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'CreateUsuariosregistradosTable' => __DIR__ . '/../..' . '/database/migrations/2018_08_15_001433_create_usuariosregistrados_table.php',

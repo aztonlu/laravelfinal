@@ -32,6 +32,7 @@ return array(
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateReservaasientoTable' => $baseDir . '/database/migrations/2018_08_15_185016_create_reservaasiento_table.php',
     'CreateTagsTable' => $baseDir . '/database/migrations/2017_10_04_181323_create_tags_table.php',
+    'CreateTransaccionTable' => $baseDir . '/database/migrations/2018_08_21_001134_create_transaccion_table.php',
     'CreateUserNewslettersTable' => $baseDir . '/database/migrations/2017_10_09_171731_create_user_newsletters_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'CreateUsuariosregistradosTable' => $baseDir . '/database/migrations/2018_08_15_001433_create_usuariosregistrados_table.php',

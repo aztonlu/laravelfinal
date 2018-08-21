@@ -512,6 +512,11 @@ Route::group(['prefix' => 'admin'], function (){
         'as'    => 'admin.buses.destroy'
     ]);
 
+    Route::resource('transaccion', 'Admin\TransaccionController');
+    Route::get('transaccion/{id}/destroy', [
+        'uses'  => 'Admin\TransaccionController@destroy',
+        'as'    => 'admin.transaccion.destroy'
+    ]);
 
 
 
