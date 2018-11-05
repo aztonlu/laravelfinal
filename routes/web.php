@@ -49,7 +49,7 @@ Route::get('/qui-sommes-nous', function () {
 Route::get('/notre-etat-d-esprit', function () {
         return view('website.fr.notre-etat-d-esprit');
     });
-
+//redireccion
 Route::get('/temoignages', function () {
         return view('website.fr.temoignages');
     });
