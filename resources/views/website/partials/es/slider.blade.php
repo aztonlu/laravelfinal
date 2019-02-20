@@ -1,7 +1,7 @@
 <div class="carousel slide carousel-fade full-height" id="carousel" data-ride="carousel">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-        <div class="item with-overlay active" style="background-image: url('{{url('')}}/img/slider.png');">
+        <div class="item with-overlay active" style="background-image: url('{{url('')}}/img/slider2.png');">
             <div class="carousel-caption center-txt">
                 <h1 class="main-header">Texto 1</h1>
                 <hr>

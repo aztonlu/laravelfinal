@@ -46,7 +46,7 @@ TABLE OF CONTENTS:
 	2.30 Team
 	2.31 Image Gallery
 	2.32 Footer
-	
+
 3.0 Partial UI
 	3.1 Trip Showcase
 	3.2 Trip Grid
@@ -202,7 +202,7 @@ body {
   height: 64px;
   width: 64px;
   line-height: 65px;
-  border-radius: 50%; 
+  border-radius: 50%;
   position: relative;
 }
 .btn-loadmore {
@@ -246,7 +246,7 @@ body {
   color: #fff;
 }
 
-.twitter-left-control, 
+.twitter-left-control,
 .twitter-right-control {
   position: absolute;
   top: 50%;
@@ -263,7 +263,7 @@ body {
 
 .twitter-left-control {
   left: 80px;
-} 
+}
 
 .twitter-right-control {
   right: 80px
@@ -327,7 +327,7 @@ body {
 }
 
 
-#portfolio .container-fluid, 
+#portfolio .container-fluid,
 #portfolio .col-sm-3  {
   overflow: hidden;
   padding: 0;
@@ -339,14 +339,14 @@ body {
 
 #portfolio .overlay {
   background-color: #000;
-  color: #fff; 
+  color: #fff;
   left: 0;
   right:0;
   bottom:-100%;
   height: 0;
   position: absolute;
   text-align: center;
-  opacity:0;  
+  opacity:0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -423,7 +423,7 @@ body {
 }
 
 #portfolio .folio-item:hover .overlay .folio-info {
-  opacity: 1;  
+  opacity: 1;
   margin-bottom:0;
   margin-top:0;
 }
@@ -747,7 +747,7 @@ small.top-element-language{
 .img-lng{
 
     height: 25px;
-    
+
 }
 
 
@@ -778,11 +778,12 @@ small.top-element-language{
 .nav-menu .badge {
   margin-left: -5px;
 }
+/*este es el cambio de color en el nav*/
 .nav-menu .navbar {
   border: 0;
   border-radius: 0;
   margin-bottom: 0px;
-  background: #0e4817;
+  background: #679EF6;
 }
 .nav-menu .navbar > .container-fluid .navbar-brand {
   padding: 0;
@@ -808,6 +809,7 @@ small.top-element-language{
   padding: 0px;
   line-height: 24px;
 }
+/*aqui reeemplazamos el color de letras del nav*/
 .nav-menu .nav > li > a {
   height: 89px;
   line-height: 89px;
@@ -822,7 +824,7 @@ small.top-element-language{
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
 }
 .nav-menu .nav > li > a:focus,
 .nav-menu .nav > li > a:hover {
@@ -3388,7 +3390,7 @@ ul.itenary-steps.base .glyphicon {
 /*---------- 2.25 Testimonial ----------*/
 #testimonial {
   background-image:url(../img/perumap.png);
-  padding-bottom: 90px; 
+  padding-bottom: 90px;
 }
 .testimonial-wrap {
   padding: 120px 20px;
@@ -3862,7 +3864,7 @@ ul.checklist [type="radio"] {
 }
 #contact-us {
   background-image:url(../img/ausan.jpg);
-  padding-bottom: 90px; 
+  padding-bottom: 90px;
 }
 
 #contact-us .heading {
@@ -3919,7 +3921,7 @@ ul.address {
 #footer {
   /*color:#fff;*/
   background-image:url(../img/mapi1.jpeg);
-  padding-bottom: 90px; 
+  padding-bottom: 90px;
 
 }
 
@@ -10114,7 +10116,7 @@ ul.color-label li.gray-900 {
   background-color: #2a6f14;
   height: 90px;
   line-height: 90px;
-  width: 90px;  
+  width: 90px;
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
@@ -10128,14 +10130,14 @@ ul.color-label li.gray-900 {
   padding-bottom: 50px;
 }
 
-.our-services .col-sm-4:nth-child(4), 
-.our-services .col-sm-4:nth-child(5), 
+.our-services .col-sm-4:nth-child(4),
+.our-services .col-sm-4:nth-child(5),
 .our-services .col-sm-4:nth-child(6) {
   border-bottom:0;
   padding-top: 60px;
 }
 
-.our-services .col-sm-4:nth-child(3), 
+.our-services .col-sm-4:nth-child(3),
 .our-services .col-sm-4:nth-child(6) {
   border-right:0;
 }
