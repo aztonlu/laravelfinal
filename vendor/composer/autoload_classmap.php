@@ -30,6 +30,7 @@ return array(
     'CreateNewslettersTable' => $baseDir . '/database/migrations/2017_10_09_015357_create_newsletters_table.php',
     'CreateOrganizationsTable' => $baseDir . '/database/migrations/2017_10_06_035459_create_organizations_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+    'CreateProcesoTable' => $baseDir . '/database/migrations/2019_03_03_201355_create_proceso_table.php',
     'CreateReservaasientoTable' => $baseDir . '/database/migrations/2018_08_15_185016_create_reservaasiento_table.php',
     'CreateTagsTable' => $baseDir . '/database/migrations/2017_10_04_181323_create_tags_table.php',
     'CreateTransaccionTable' => $baseDir . '/database/migrations/2018_08_21_001134_create_transaccion_table.php',
