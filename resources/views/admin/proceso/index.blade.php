@@ -25,7 +25,7 @@
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="box-header">
-                            <a href="{{route('proceso.create')}}" class="btn btn-info">Nueva Transaccion &nbsp; <span class="fa fa-plus-circle"></span></a>
+                            <a href="{{route('proceso.create')}}" class="btn btn-info">Nuevo Proceso &nbsp; <span class="fa fa-plus-circle"></span></a>
                         </div>
                         <!-- /.box-header -->
 

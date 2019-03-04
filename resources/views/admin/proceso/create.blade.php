@@ -47,6 +47,24 @@
                             <div class="form-group">
                                 {!! Form::label('facturagas', 'Factura', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
+                                    {!! Form::text('facturagas', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el N° de factura', 'required']) !!}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                {!! Form::label('galones', 'Galones', ['class'=>'col-sm-2 control-label']) !!}
+                                <div class="col-sm-10">
+                                    {!! Form::text('galones', null, ['class' => 'form-control', 'placeholder' => 'Ingrese la cantidad de Galones', 'required']) !!}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                {!! Form::label('recorridoactual', 'Kilometraje Actual', ['class'=>'col-sm-2 control-label']) !!}
+                                <div class="col-sm-10">
+                                    {!! Form::text('recorridoactual', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el recorrido actual', 'required']) !!}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                {!! Form::label('facturagas', 'Factura', ['class'=>'col-sm-2 control-label']) !!}
+                                <div class="col-sm-10">
                                     {!! Form::text('facturagas', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el N° de boleto', 'required']) !!}
                                 </div>
                             </div>

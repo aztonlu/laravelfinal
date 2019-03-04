@@ -62,7 +62,7 @@
       google.maps.event.addDomListener(window, 'load', initialize);
       function initialize() {
         //Declarar coordenas de los mapas Cusco - Lima
-        var latLng = new google.maps.LatLng(-13.5313136, -71.9525267);
+        var latLng = new google.maps.LatLng(-13.521724002775906, -71.96656546350101);
         var latLng1 = new google.maps.LatLng(-12.125797, -77.0282776);
 
         //Declarar elemento declarado en la vista
@@ -117,6 +117,6 @@
 <script type="text/javascript" src="{{url('')}}/js/min/map.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/js/min/tripdetailpage.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/js/min/home.min.js"></script>
-<script async src="https://static.addtoany.com/menu/page.js"></script>
+
 </body>
 </html>

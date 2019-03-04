@@ -274,7 +274,7 @@ body {
 }
 /*feria*/
 #imagenes-ferias{
-  background-image: url(../img/perumap.png);
+  background-image: url();
   padding: 60px 0;
 }
 
@@ -2119,10 +2119,10 @@ main.gray {
   margin-right: 15px;
 }
 .btn-primary {
-  background: #0e4817;
+  background: #99CCFF;
 }
 .btn-primary:hover {
-  background: #395d20;
+  background: #87CEEB;
 }
 .btn-base {
   background: #111111;
@@ -3390,10 +3390,10 @@ ul.itenary-steps.base .glyphicon {
 /*---------- 2.25 Testimonial ----------*/
 #testimonial {
   background-image:url(../img/perumap.png);
-  padding-bottom: 90px;
+  padding-bottom: 0px;
 }
 .testimonial-wrap {
-  padding: 120px 20px;
+  padding: 20px 20px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3422,8 +3422,8 @@ ul.itenary-steps.base .glyphicon {
   margin-bottom: 30px;
 }
 .testimonial .avatar {
-  height: 120px;
-  width: 120px;
+  height: 60px;
+  width: 60px;
   border-radius: 120px;
 }
 .testimonial .name {
@@ -3909,7 +3909,7 @@ ul.address {
 }
 
 .btn-submit {
-  background-color: #0e4817;
+  background-color:  	#4169E1;
   display: block;
   padding: 12px;
   width: 100%;

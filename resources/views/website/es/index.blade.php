@@ -8,7 +8,7 @@
     <div class="container">
       <div class="row">
         <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <h2>Precios e informacion</h2>
+          <!--<h3>Precios e informacion</h3>-->
           <p> </p>
         </div>
       </div>
@@ -20,76 +20,22 @@
             <div class="folio-image">
               <img class="img-responsive" src="img/fondo1.png" alt="">
             </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Panel1 </h3>
-                    <p>subtitulo panel 1.</p>
-                  </div>
-                  <div class="folio-overview">
-                    <!--<span class="folio-link"><a class="folio-read-more" href=""><i class="fa fa-link"></i></a></span>-->
 
-                    <span class="folio-expand"><a data-toggle="modal" data-target=".bs-example-modal-lg" class="course_more"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-header" style="background-color: #2a6f14">
-                      <button type="button" data-dismiss="modal" align="rigth" style="border-color: transparent;background-color: transparent; color: #fff">&times;</button>
-                      <h3 align="center" style="color: #fff; margin-top: 0px;">Titulo de paneles</h3>
-                  </div>
-            <div class="modal-content">
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                  <div class="carousel-inner">
-                    <div class="item active">
-                     <img class="img-responsive" src="img/fondo1.png" width="100%;" alt="...">
-                      <div class="carousel-caption">
-                        Descripcion 1 <br>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img class="img-responsive" src="img/fondo1.png" width="100%;" alt="...">
-                      <div class="carousel-caption">
-                        Descripcion 2
-                      </div>
-                    </div>
-                     <div class="item">
-                      <img class="img-responsive" src="img/fondo1.png" width="100%;" alt="...">
-                      <div class="carousel-caption">
-                        Descripcion 3
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img class="img-responsive" src="img/fondo1.png" width="100%;" alt="...">
-                      <div class="carousel-caption">
-                        Descripcion 4
-                      </div>
-                    </div>
-                  </div>
 
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                  </a>
-                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="col-sm-6">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
             <div class="folio-image">
-              <h2>PRECIOS DIARIOS</h2>
-              <H3>precio 1</H3>
-              <h3>precio 2</h3>
+              <h3>Precios de Lunes a S&aacute;bados</h3>
+            </p>Cusco - Paradero 2 &nbsp &nbsp &nbsp S/.0.00</p>
+              </p>Cusco - Paradero 3 &nbsp &nbsp &nbsp S/.0.00</p>
+              </p>Cusco - Paradero 4 &nbsp &nbsp &nbsp S/.0.00</p>
+              </p>Anta - Paradero 4 &nbsp &nbsp &nbsp S/.0.00</p>
+              </p>Anta - Paradero 3 &nbsp &nbsp &nbsp S/.0.00</p>
+              </p>Anta - Paradero 2 &nbsp &nbsp &nbsp S/.0.00</p>
 
             </div>
           </div>
@@ -235,10 +181,6 @@
       </div>
   </div>
 
-
-
-
-
     <div id="portfolio-single-wrap"style="padding-top: 45px">
       <div id="portfolio-single">
       </div>
@@ -248,40 +190,39 @@
 
 
 
-  <section id="twitter" class="parallax"style="padding-top: 5px">
+    <section id="twitter" class="parallax"style="padding-top: 5px">
 
-    <div id="blogspace">
-      <a class="twitter-left-control" href="#twitter-carousel" role="button" data-slide="prev" style="margin-top: -160px;"><i class="fa fa-angle-left"></i></a>
-      <a class="twitter-right-control" href="#twitter-carousel" role="button" data-slide="next" style="margin-top: -160px;"><i class="fa fa-angle-right"></i></a>
-      <div class="container">
-        <div class="row">
-          <div id="blogsec" class="col-sm-8 col-sm-offset-2">
-
-            <div id="twitter-carousel" class="carousel slide" data-ride="carousel">
-              <br><br>
-              <div class="carousel-inner">
-                 <?php $count=0;?>
-                @foreach($blogs as $blog)
-                @if($count==0)
-                <div class="item active">
-                    <a href="{{$blog->link}}"> <h4>{{$blog->name}}</h4>
-                  <p> Ver contenido del blog</p></a>
+      <div id="blogspace">
+        <a class="twitter-left-control" href="#twitter-carousel" role="button" data-slide="prev" style="margin-top: -160px;"><i class="fa fa-angle-left"></i></a>
+        <a class="twitter-right-control" href="#twitter-carousel" role="button" data-slide="next" style="margin-top: -160px;"><i class="fa fa-angle-right"></i></a>
+        <div class="container">
+          <div class="row">
+            <div id="blogsec" class="col-sm-14 col-sm-offset-2">
+              <div id="twitter-carousel" class="carousel slide" data-ride="carousel">
+                <br><br>
+                <div class="carousel-inner">
+                   <?php $count=0;?>
+                  @foreach($blogs as $blog)
+                  @if($count==0)
+                  <div class="item active">
+                      <a href="{{$blog->link}}"> <h4>{{$blog->name}}</h4>
+                    <p> Ver contenido del blog</p></a>
+                  </div>
+                  @else
+                  <div class="item">
+                      <a href="{{$blog->link}}"> <h4>{{$blog->name}}</h4>
+                      <p>Ver contenido del blog </p></a>
+                  </div>
+                  @endif
+                  <?php $count++;?>
+                  @endforeach
                 </div>
-                @else
-                <div class="item">
-                    <a href="{{$blog->link}}"> <h4>{{$blog->name}}</h4>
-                    <p>Ver contenido del blog </p></a>
-                </div>
-                @endif
-                <?php $count++;?>
-                @endforeach
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section><!--/#blog-->
+    </section><!--/#blog-->
 
 
 
@@ -505,7 +446,7 @@
 <section id="map-section" >
 
       <center>
-        <h2>Rutas</h2>
+        <h3>Rutas</h3>
       </center>
 
       <div class="col-sm-12">
@@ -631,7 +572,7 @@
     display:inline;
 }
 footer{
-  background-color: rgb(16,54,9);
+  background-color: #99CCFF;
 }
 </style>
 
@@ -646,7 +587,7 @@ footer{
 
 
 <div class="container-fluid">
-  <div class="row" style="text-align: center; color: white;">
+  <div class="row" style="text-align: center; color: Gray;">
 
      <div class="col-xs-12 col-md-8">
       <div class="row" sty>
@@ -662,7 +603,7 @@ footer{
               <?php $url = Request::path();?>
               <input type="hidden" name="language" value="{{$url}}">
               <input name='email' placeholder='example@mail.com' class="form-control text-center" type="email" style="width:90%">
-              <button type="submit" class="btn-submit text-center" style="width:90%">Suscribirme ahora</button>
+              <button type="submit" class="btn-submit text-center " style="width:90%">Suscribirme ahora</button>
 
           </form>
 
