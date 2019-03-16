@@ -51,21 +51,21 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group" hidden="true">
                                 {!! Form::label('facebook', 'Facebook Link', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                     {!! Form::text('facebook', null, ['class' => 'form-control', 'placeholder' => 'https://www.facebook.com/userperson']) !!}
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group" hidden="true">
                                 {!! Form::label('twitter', 'Twitter Link', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                     {!! Form::text('twitter', null, ['class' => 'form-control', 'placeholder' => 'https://twitter.com/userperson']) !!}
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group" hidden="true">
                                 {!! Form::label('linkedin', 'LinkedIn Link', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                     {!! Form::text('linkedin', null, ['class' => 'form-control', 'placeholder' => 'https://www.linkedin.com/in/userperson/']) !!}
@@ -90,7 +90,7 @@
                                     {!! Form::select('language', ['spanish' => 'Spanish', 'english' => 'English', 'italian' => 'Italian', 'frech' => 'French', 'german' => 'German'], null, ['class' => 'form-control']) !!}
                                 </div>
                             </div>-->
-                            <div class="form-group">
+                            <div class="form-group" hidden="true">
                                 {!! Form::label('languageLabel', 'Idioma del Usuario', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                     {!! Form::select('language', ['spanish' => 'Español'], null, ['class' => 'form-control']) !!}

@@ -7,7 +7,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Tours 
+                Comentarios 
                 <small>Listado</small>
             </h1>
             <ol class="breadcrumb">
@@ -49,7 +49,7 @@
                                         	<a href="" style="color:red;"><span class="ion-email-unread"></span></a>
                                         	@else
                                         	<a href="" style="color:green;"><span class="ion-email"></span></a>
-                                        	@endif 
+                                        	@endif
                                         	&nbsp;&nbsp;&nbsp;
                                         </td>-->
                                     </tr>
@@ -66,7 +66,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-                    
+
                         </div>
                         <!-- /.box-body -->
                     </div>
