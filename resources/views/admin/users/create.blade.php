@@ -97,7 +97,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                {!! Form::label('Iimagen', 'Image', ['class'=>'col-sm-2 control-label']) !!}
+                                {!! Form::label('Iimagen', 'Imagen', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                     <input id="imagen" type="file"  class="form-control" name="imagen" value="{{ old('imagen') }}" accept="image/png,image/gif,image/jpeg" onchange="readURL(this);">
                                 </div>

@@ -8,7 +8,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Testimonio 
+                Testimonio
                 <small>Nuevo</small>
             </h1>
             <ol class="breadcrumb">
@@ -71,16 +71,16 @@
                                     {!! Form::textarea('testimonial', null, ['class' => 'form-control', 'placeholder' => 'Testimonio']) !!}
                                 </div>
                             </div>
-                            
-                            
-                            
+
+
+
                             <div class="form-group">
                                 {!! Form::label('imagen', 'Imagenes del servidor', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
-                                    <button 
-                                    type="button" 
-                                    class="btn btn-info" 
-                                    data-toggle="modal" 
+                                    <button
+                                    type="button"
+                                    class="btn btn-info"
+                                    data-toggle="modal"
                                     data-target="#favoritesModal">
                                     Selecciona una imagen desde el servidor
                                     <span class="fa fa-plus-circle"></span>
@@ -91,25 +91,25 @@
                                     <a id='a' onclick="fromComputer()" href='#' style='color:#ff7677;'>O deseas cargar desde tu computadora</a>
                                     <input type='hidden' name='flag' value='true'>
                                     </div>
-                                    
+
                                 </div>
-                                
+
                             </div>
 
-                            <div class="modal fade" id="favoritesModal" 
-                            tabindex="-1" role="dialog" 
+                            <div class="modal fade" id="favoritesModal"
+                            tabindex="-1" role="dialog"
                             aria-labelledby="favoritesModalLabel">
                             <div class="modal-dialog" role="document">
                             <div class="modal-content">
                             <div class="modal-header">
-                            <button type="button" class="close" 
-                            data-dismiss="modal" 
+                            <button type="button" class="close"
+                            data-dismiss="modal"
                             aria-label="Close">
                             <span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" 
+                            <h4 class="modal-title"
                             id="favoritesModalLabel">Seleccionar una imagen</h4>
                             </div>
-                            <div class="modal-body"> 
+                            <div class="modal-body">
                             <h3>Selecciona una imagen</h3>
                             <p>Selecciona una imagen del servidor</p>
                             <br>
@@ -117,10 +117,10 @@
                             {{leer_archivos_y_directorios('tours')}}
                             {{leer_archivos_y_directorios('testimonial')}}
                             {{leer_archivos_y_directorios('users')}}
-  
+
 <!--/*
      *funcion para leer archivos de un directorio (recursivo)
-     *-->                
+     *-->
 <?php    function leer_archivos_y_directorios($ruta)
 {
 
@@ -144,17 +144,17 @@
                     {
                         echo                               "<div class='col-md-4'>
                                     <div class='panel panel-default'>
-                                        
+
                                         <div  class='panel-body'>
                                         <img
                                              src='../../" . $ruta . "/" . $archivo . "' class='img-responsive' style='width:200px;height:200px'>
-                                            
+
                                         </div>
                                         <div  class='panel-footer'
                                              >
                                              <p style='font-size:10px'>" . $archivo ."</p>";
                         ?>
-                                            
+
                                         &nbsp;&nbsp;&nbsp; <a href="#" onclick="functionSelect('<?php echo $ruta . '/' . $archivo?>')" data-dismiss="modal" style="color:#ff7677;"><span class="fa fa-check-square"></span> Seleccionar</a>
                                 <script>
                                     function functionSelect(file){
@@ -174,7 +174,7 @@
                     }
                 }
             }
- 
+
             closedir($aux);
 
         }
@@ -192,26 +192,26 @@
                             </div>
                             </div>
                             </div>
-                            
+
                             <div class="form-group">
                                 {!! Form::label('status', 'Estado', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                      {!! Form::select('status', ['approved' => 'approved', 'disapproved' => 'disapproved'], ['class' => 'form-control']) !!}
                                 </div>
                             </div>
-                            
-                            <div class="form-group">
+
+                            <div class="form-group" hidden="true">
                                  {!! Form::label('tour', 'Tour', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                     <select name="tour" class="form-control">
-                                        @foreach($tours as $tour) 
-                                        <option value="{{ $tour->id }}" selected="selected" > {{ $tour->title }} </option> 
+                                        @foreach($tours as $tour)
+                                        <option value="{{ $tour->id }}" selected="selected" > {{ $tour->title }} </option>
                                         @endforeach
-                                        
+
                                     </select>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <!-- /.box-body -->
                         <div class="box-footer">

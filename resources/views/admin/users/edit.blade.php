@@ -8,13 +8,13 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                User
-                <small>Edit</small>
+                Usuario
+                <small>Editar</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li><a href="#">Users</a></li>
-                <li class="active">Edit</li>
+                <li><a href="#">Usuario</a></li>
+                <li class="active">Editar</li>
             </ol>
         </section>
 
@@ -30,7 +30,7 @@
                     <!-- Horizontal Form -->
                     <div class="box box-info">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Edit "{{$user->name}}"</h3>
+                            <h3 class="box-title">Editar "{{$user->name}}"</h3>
                         </div>
                         <!-- /.box-header -->
                         <!-- form start -->
@@ -49,41 +49,41 @@
                                     {!! Form::email('email', $user->email, ['class' => 'form-control', 'placeholder' => 'ejemplo@terandes.com', 'required']) !!}
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group" hidden="true">
                                 {!! Form::label('facebook', 'Facebook Link', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                     {!! Form::text('facebook',$user->facebook, ['class' => 'form-control', 'placeholder' => 'https://www.facebook.com/userperson']) !!}
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group" hidden="true">
                                 {!! Form::label('twitter', 'Twitter Link', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                     {!! Form::text('twitter', $user->twitter, ['class' => 'form-control', 'placeholder' => 'https://twitter.com/userperson']) !!}
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group" hidden="true">
                                 {!! Form::label('linkedin', 'LinkedIn Link', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                     {!! Form::text('linkedin', $user->linkedin, ['class' => 'form-control', 'placeholder' => 'https://www.linkedin.com/in/userperson/']) !!}
                                 </div>
                             </div>
                             <div class="form-group">
-                                {!! Form::label('language', 'User Language', ['class'=>'col-sm-2 control-label']) !!}
+                                {!! Form::label('language', 'Idioma', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                     {!! Form::select('language', ['spanish' => 'Spanish', 'german' => 'German', 'english' => 'English','italian' => 'Italian','french' => 'French'], $user->language, ['class' => 'form-control']) !!}
                                 </div>
                             </div>
                             @if(Auth::user()->type == "admin")
                             <div class="form-group">
-                                {!! Form::label('type', 'User Type', ['class'=>'col-sm-2 control-label']) !!}
+                                {!! Form::label('type', 'Tipo de usuario', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                     {!! Form::select('type', ['member' => 'Miembro', 'admin' => 'Administrador'], $user->type, ['class' => 'form-control']) !!}
                                 </div>
                             </div>
 
-                            @endif 
+                            @endif
                         </div>
                         <!-- /.box-body -->
                         <div class="box-footer">

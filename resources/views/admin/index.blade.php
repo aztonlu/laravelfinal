@@ -189,9 +189,9 @@
                 </div>
                 <!-- ./col -->
 
-                <div class="col-lg-3 col-xs-6">
+                <!--<div class="col-lg-3 col-xs-6">
                     <!-- small box -->
-                    <div class="small-box bg-light-blue-gradient">
+                    <!--<div class="small-box bg-light-blue-gradient">
                         <div class="inner">
                             <h3>00</h3>
                             <p>Comentarios</p>
@@ -201,7 +201,7 @@
                         </div>
                         <a href="{{route('comments.index')}}" class="small-box-footer">Entrar al módulo <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
-                </div>
+                </div>-->
                 <!-- ./col -->
 
                 <div class="col-lg-3 col-xs-6">

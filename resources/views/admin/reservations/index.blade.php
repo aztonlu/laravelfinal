@@ -7,7 +7,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Reservas 
+                Reservas
                 <small>Listado</small>
             </h1>
             <ol class="breadcrumb">
@@ -30,13 +30,13 @@
                                 <thead>
                                 <tr>
                                     <th>Id</th>
-                                    <th>Names</th>
+                                    <th>Nombres</th>
                                     <th>Email</th>
                                     <th>Teléfono</th>
                                     <th>DNI</th>
                                     <th>Horario</th>
                                     <th>Cantidad pasajes</th>
-                                    
+
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -56,7 +56,7 @@
                                 <tfoot>
                                 <tr>
                                     <th>Id</th>
-                                    <th>Names</th>
+                                    <th>Nombres</th>
                                     <th>Email</th>
                                     <th>Teléfono</th>
                                     <th>DNI</th>

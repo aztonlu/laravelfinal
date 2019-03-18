@@ -8,12 +8,12 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Transaccion
+                Boletos
                 <small>Nuevo</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href=""><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                <li><a href="#">Transaccion</a></li>
+                <li><a href="#">Boletos</a></li>
                 <li class="active">Nuevo</li>
             </ol>
         </section>
@@ -31,7 +31,7 @@
                     <!-- Horizontal Form -->
                     <div class="box box-info">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Crear transaccion</h3>
+                            <h3 class="box-title">Registrar boleto</h3>
                         </div>
                         <!-- /.box-header -->
                         <!-- form start -->

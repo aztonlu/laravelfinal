@@ -353,7 +353,7 @@
               <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" name="name" class="form-control" placeholder="Nombre" required="required" style="border: 2px solid #e6e6e6;">
+                      <input type="text" name="name" class="form-control" placeholder="Apellidos y Nombres" required="required" style="border: 2px solid #e6e6e6;">
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -515,7 +515,12 @@
               <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" name="name" class="form-control" placeholder="Nombre" required="required" style="border: 2px solid #e6e6e6;">
+                      <input type="text" name="name" class="form-control" placeholder="Apellidos y Nombres" required="required" style="border: 2px solid #e6e6e6;">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" placeholder="N&uacute;mero de contacto" required="required" style="border: 2px solid #e6e6e6;">
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -528,7 +533,7 @@
                       <div class="form-group">
                         <input type="text" name="nationality" class="form-control" placeholder="Nacionalidad" required="required" style="border: 2px solid #e6e6e6;">
                       </div>
-                  </div>
+                    </div>
               </div>
       </div>
                 <div class="form-group">
