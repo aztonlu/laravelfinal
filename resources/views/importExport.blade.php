@@ -12,9 +12,12 @@
 		</div>
 	</nav>
 	<div class="container">
-		<a href="{{ URL::to('downloadExcel/xls') }}"><button class="btn btn-success">Descargar Excel xls</button></a>
-		<a href="{{ URL::to('downloadExcel/xlsx') }}"><button class="btn btn-success">Descargar Excel xlsx</button></a>
-		<a href="{{ URL::to('downloadExcelcomentarios/xlsx') }}"><button class="btn btn-success">Descargar Excel Comentarios</button></a>
+		<a href="{{ URL::to('downloadExcel/xls') }}"><button class="btn btn-success">Reportes Usuarios</button></a>
+		<a href="{{ URL::to('downloadExcel/xlsx') }}"><button class="btn btn-success">Reportes gastos</button></a>
+		<a href="{{ URL::to('downloadExcelcomentarios/xlsx') }}"><button class="btn btn-success">Reportes de ubicacion de buses</button></a>
+		<a href="{{ URL::to('downloadExcelcomentarios/xlsx') }}"><button class="btn btn-success">Reportes de clientes</button></a>
+		<a href="{{ URL::to('downloadExcelcomentarios/xlsx') }}"><button class="btn btn-success">Reportes de reservas</button></a>
+		<a href="{{ URL::to('downloadExcelcomentarios/xlsx') }}"><button class="btn btn-success">Reportes de ganacias</button></a>
 		<a href="{{ URL::to('downloadExcelarticulos/xlsx') }}"><button class="btn btn-success">Descargar Excel Articulos</button></a>
 
 
