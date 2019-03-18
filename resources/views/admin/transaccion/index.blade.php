@@ -35,7 +35,7 @@
                                 <tr>
                                     <th>Id</th>
                                     <th>Dni</th>
-                                    <th>Boleto</th>
+                                    <th>Ticket</th>
                                     <th>Acción</th>
 
                                 </tr>
@@ -57,7 +57,7 @@
                                 <tr>
                                   <th>Id</th>
                                   <th>Dni</th>
-                                  <th>Boleto</th>
+                                  <th>Ticket</th>
                                   <th>Acción</th>
                                 </tr>
                                 </tfoot>

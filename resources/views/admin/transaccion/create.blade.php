@@ -45,7 +45,7 @@
                             </div>
 
                             <div class="form-group">
-                                {!! Form::label('boleto', 'Boleto', ['class'=>'col-sm-2 control-label']) !!}
+                                {!! Form::label('boleto', 'Ticket', ['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
                                     {!! Form::text('boleto', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el N° de boleto', 'required']) !!}
                                 </div>
