@@ -61,7 +61,7 @@
                                 }
                             ]
                         },
-                        
+
                         {
                             "featureType": "road.arterial",
                             "elementType": "all",
@@ -140,7 +140,7 @@
 
                 // Data for the markers consisting of a name, a LatLng and a zIndex for the
                 // order in which these markers should display on top of each other.
-               
+
 
                 function setMarkers(map) {
                     // Adds markers to the map.
@@ -158,8 +158,8 @@
                         coords: [1, 1, 1, 20, 18, 20, 18, 1],
                         type: 'poly'
                     };
-                    var arreglo = <?php echo json_encode($etapesforMap); ?>; 
-                   
+                    var arreglo = <?php echo json_encode($etapesforMap); ?>;
+
 
                     for (var i = 0; i < arreglo.length; i++) {
                         var beach = arreglo[i];
@@ -198,24 +198,24 @@
                 <a class="a2a_button_google_plus"></a>
                 <a class="a2a_button_pinterest"></a>
             </div>
-            
+
         </div>
 
         <div class="col-md-3 tab-wrap tab-wrap-aside" style="margin-top: 0;">
             <div class="section-title-aside left">
                 <h4 style="color: green">RESERVAR</h4>
             </div>
-           
+
             <div class="content-buy">
-               
+
                 <button class="btn btn-info" data-toggle="modal" data-target="#myQestion">REGISTRO<span class="icon-chat"></span></button>
                 <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">RESERVAS</button>
-                
+
             </div>
 
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxJnaq8H2Ib6E0bBT1sTnSnGZ5tqONxFI&callback=initMap"></script>
-            
-            
+
+
         </div>
     </div>
 </div>
@@ -230,9 +230,9 @@
             <div class="modal-body">
 
                 <div class="preview-wrap">
-                    <form action="{{ url('') }}/storeReservation" method="POST">   
+                    <form action="{{ url('') }}/storeReservation" method="POST">
                         {{ csrf_field() }}
-                        <div class="form-wrap-two">  
+                        <div class="form-wrap-two">
                             <div class="form-group">
                                 <label>Nombre</label>
                                 <input type="text" class="form-control" name="name" placeholder="Nombre" value="">
@@ -253,7 +253,7 @@
                                 <label>Nacionalidad</label>
                                 <input type="text" class="form-control" name="nationality" placeholder="Pais" value="Perú">
                             </div>
-                            
+
                         </div>
 
                         <div class="form-wrap-two">
@@ -268,7 +268,7 @@
                                 <label>Cantidad de personas</label>
                                 <div class="row">
                                     <div class="col-sm-6"><input type="number" name="adults" class="form-control" placeholder="Adultos" value="1"></div>
-                                    <div class="col-sm-6"><input type="number" name="Children" class="form-control" placeholder="Niños" value="0"></div>
+                                    
                                 </div>
                             </div>
                             <div class="form-group">
@@ -311,7 +311,7 @@
                                         <option value="plus1">plus2</option>
                                         <option value="plus1">plus3</option>
                                     </select>
-                                </div>                            
+                                </div>
                         </div>
                     </form>
                 </div>
@@ -363,7 +363,7 @@
 <style>
   h4{
     color: #fff;
-    
+
   }
   a{
     color: #000;
@@ -387,36 +387,36 @@ footer{
 <!--inicio del footer-->
 
  <footer >
-            
+
     <div class="footer-top wow fadeInUp animated" style="padding-top: 0px;" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInUp;background-color: rgb(23,58,27)">
-        
+
 
 
 <div class="container-fluid">
   <div class="row" style="text-align: center; color: white;">
- 
+
      <div class="col-xs-12 col-md-8">
-      
+
     </div>
      <div class="col-xs-12 col-md-4">
             <h2><strong>Suscribase</strong></h2>
-        
+
             <h5 style="color: #fff;">Suscribase para recibir notificaciones</h5>
-          
+
               <form action="{{route('publicnewsletters.store')}}" method="post">
             {{ csrf_field() }}
               <?php $url = Request::path();?>
               <input type="hidden" name="language" value="{{$url}}">
               <input name='email' placeholder='example@mail.com' class="form-control text-center" type="email" style="width:90%">
               <button type="submit" class="btn-submit text-center" style="width:90%">Ingrese su correo</button>
-                  
+
           </form>
-           
+
     </div>
   </div>
 </div>
     </div>
- 
-    
+
+
   </footer>
 @endsection
