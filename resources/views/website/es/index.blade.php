@@ -53,9 +53,10 @@
               data-target="#registrarusuarios">
               Registrese
           </button>
-        </div>
 
-        <div class="heading text-center col-sm-16"style="padding-top: 35px">
+        </div>
+        <br><br><br><br><br><br>
+        <!--<div class="heading text-center col-sm-16"style="padding-top: 35px">
             <button
                 type="button"
                 class="btn btn-primary btn-lg"
@@ -63,7 +64,8 @@
                 data-target="#reservarpasajes">
                 Reservar
             </button>
-          </div>
+          </div>-->
+
 
 
         <div class="modal fade" id="registrarusuarios"
@@ -95,7 +97,7 @@
                               </div>
                               <div class="col-sm-6">
                                 <div class="form-group">
-                                  <input type="text" name="dniusuario" class="form-control" placeholder="Dni" required="required" style="border: 2px solid #e6e6e6;">
+                                  <input type="text" name="dniusuario" class="form-control" placeholder="Dni" required="required" required pattern="[0-9]{8,8}" style="border: 2px solid #e6e6e6;">
                                 </div>
                               </div>
                               <div class="col-sm-6">
@@ -353,7 +355,7 @@
               <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" name="name" class="form-control" placeholder="Apellidos y Nombres" required="required" style="border: 2px solid #e6e6e6;">
+                      <input type="text" name="name" class="form-control" placeholder="Nombre" required="required" style="border: 2px solid #e6e6e6;">
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -374,12 +376,12 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <input type="hidden" name="tour" class="form-control" placeholder="--" required="required" value="165">
-                        <select type="hidden" name="tour" class="form-control">
+                        <!--<select type="hidden" name="tour" class="form-control">
                           <!--@foreach($tours as $tour) -->
                           <!--<option value="165" selected="selected" > {{ $tour->title }} </option>
                           <!--@endforeach-->
                       </div>
-                        </select>
+                        <!--</select>-->
                   </div>
               </div>
 
@@ -515,12 +517,7 @@
               <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" name="name" class="form-control" placeholder="Apellidos y Nombres" required="required" style="border: 2px solid #e6e6e6;">
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <input type="text" name="name" class="form-control" placeholder="N&uacute;mero de contacto" required="required" style="border: 2px solid #e6e6e6;">
+                      <input type="text" name="name" class="form-control" placeholder="Nombre" required="required" style="border: 2px solid #e6e6e6;">
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -533,7 +530,7 @@
                       <div class="form-group">
                         <input type="text" name="nationality" class="form-control" placeholder="Nacionalidad" required="required" style="border: 2px solid #e6e6e6;">
                       </div>
-                    </div>
+                  </div>
               </div>
       </div>
                 <div class="form-group">
