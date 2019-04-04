@@ -359,7 +359,7 @@
               <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" name="name" class="form-control" placeholder="Apellidos y Nombres" required="required" style="border: 2px solid #e6e6e6;">
+                      <input type="text" name="name" class="form-control" placeholder="Nombre" required="required" style="border: 2px solid #e6e6e6;">
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -380,12 +380,12 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <input type="hidden" name="tour" class="form-control" placeholder="--" required="required" value="165">
-                        <select type="hidden" name="tour" class="form-control">
+                        <!--<select type="hidden" name="tour" class="form-control">
                           <!--@foreach($tours as $tour) -->
                           <!--<option value="165" selected="selected" > {{ $tour->title }} </option>
                           <!--@endforeach-->
                       </div>
-                        </select>
+                        <!--</select>-->
                   </div>
               </div>
 
@@ -521,12 +521,16 @@
               <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
+<<<<<<< HEAD
                       <input type="text" name="name" class="form-control" placeholder="Apellidos y Nombres" required="required" style="border: 2px solid #e6e6e6;">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
                       <input type="number" name="name" class="form-control" placeholder="N&uacute;mero de contacto" required="required" style="border: 2px solid #e6e6e6;">
+=======
+                      <input type="text" name="name" class="form-control" placeholder="Nombre" required="required" style="border: 2px solid #e6e6e6;">
+>>>>>>> 7728e1a9e789ec34ed38e773e56ed7ab3464e616
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -539,7 +543,7 @@
                       <div class="form-group">
                         <input type="text" name="nationality" class="form-control" placeholder="Nacionalidad" required="required" style="border: 2px solid #e6e6e6;">
                       </div>
-                    </div>
+                  </div>
               </div>
       </div>
                 <div class="form-group">
