@@ -29,13 +29,18 @@
         <div class="col-sm-6">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
             <div class="folio-image">
-              <h3>Precios de Lunes a S&aacute;bados</h3>
-            </p>Cusco - Paradero 2 &nbsp &nbsp &nbsp S/.0.00</p>
-              </p>Cusco - Paradero 3 &nbsp &nbsp &nbsp S/.0.00</p>
-              </p>Cusco - Paradero 4 &nbsp &nbsp &nbsp S/.0.00</p>
-              </p>Anta - Paradero 4 &nbsp &nbsp &nbsp S/.0.00</p>
-              </p>Anta - Paradero 3 &nbsp &nbsp &nbsp S/.0.00</p>
-              </p>Anta - Paradero 2 &nbsp &nbsp &nbsp S/.0.00</p>
+              <h3>Precios de Lunes a Domingos</h3>
+              </p>Cusco - Poroy &nbsp &nbsp &nbsp S/.1.50</p>
+              </p>Cusco - Desvio &nbsp &nbsp &nbsp S/.1.50</p>
+              </p>Cusco - Cachimayo &nbsp &nbsp &nbsp S/.2.00</p>
+              </p>Cusco - Pucyura &nbsp &nbsp &nbsp S/.2.00</p>
+              </p>Cusco - Izcuchaca &nbsp &nbsp &nbsp S/.2.00</p>
+
+              </p>Izcuchaca - Pucyura &nbsp &nbsp &nbsp S/.1.00</p>
+              </p>Izcuchaca - Cachimayo &nbsp &nbsp &nbsp S/.1.00</p>
+              </p>Izcuchaca - Desvio &nbsp &nbsp &nbsp S/.1.50</p>
+              </p>Izcuchaca - Poroy &nbsp &nbsp &nbsp S/.1.50</p>
+              </p>Izcuchaca - Cusco &nbsp &nbsp &nbsp S/.2.00</p>
 
             </div>
           </div>
@@ -54,8 +59,9 @@
               Registrese
           </button>
         </div>
+        <br> <br> <br>
 
-        <div class="heading text-center col-sm-16"style="padding-top: 35px">
+        <!--<div class="heading text-center col-sm-16"style="padding-top: 35px">
             <button
                 type="button"
                 class="btn btn-primary btn-lg"
@@ -63,7 +69,7 @@
                 data-target="#reservarpasajes">
                 Reservar
             </button>
-          </div>
+          </div>-->
 
 
         <div class="modal fade" id="registrarusuarios"
@@ -95,7 +101,7 @@
                               </div>
                               <div class="col-sm-6">
                                 <div class="form-group">
-                                  <input type="text" name="dniusuario" class="form-control" placeholder="Dni" required="required" style="border: 2px solid #e6e6e6;">
+                                  <input type="number" name="dniusuario" class="form-control" placeholder="Dni" required="required" style="border: 2px solid #e6e6e6;">
                                 </div>
                               </div>
                               <div class="col-sm-6">
@@ -409,7 +415,7 @@
 
   </section><!--/#testimonial-->
 
-  <section id="map-section" style="padding-top: 8%;">
+  <section id="contact2" style="padding-top: 8%;">
     <br>
 
       <center>
@@ -520,7 +526,7 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" name="name" class="form-control" placeholder="N&uacute;mero de contacto" required="required" style="border: 2px solid #e6e6e6;">
+                      <input type="number" name="name" class="form-control" placeholder="N&uacute;mero de contacto" required="required" style="border: 2px solid #e6e6e6;">
                     </div>
                   </div>
                   <div class="col-sm-6">

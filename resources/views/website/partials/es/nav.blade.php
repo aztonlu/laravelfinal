@@ -24,7 +24,7 @@
 
                     <li><a href="#testimonial">Reservar</a></li>
 
-                    <li><a href="#map-section">Contactenos</a></li>
+                    <li><a href="#contact2">Contactenos</a></li>
 
                 </ul>
             </div>

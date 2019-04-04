@@ -259,8 +259,7 @@
                         </div>
                         <!--<a href="{{route('report.index')}}" class="small-box-footer">Entrar al módulo <i class="fa fa-arrow-circle-right"></i></a>-->
 
-                        <a href="{{url('')}}/importExport" class="small-box-footer">Exportar</a>
-                        <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{url('')}}/importExport" class="small-box-footer">Exportar <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
 
