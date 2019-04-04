@@ -7,7 +7,7 @@
         <div class="item with-overlay" style="background-image: url('{{url('')}}/img/slider.png');">
 
         </div>
-        <div class="item with-overlay" style="background-image: url('{{url('')}}/img/slider.png');">
+        <div class="item with-overlay" style="background-image: url('{{url('')}}/img/slider3_nuevo.png');">
 
         </div>
 
