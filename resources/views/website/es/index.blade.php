@@ -238,7 +238,7 @@
       <div class="row">
         <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
           <h2>Testimonios</h2>
-          <p align="center">Comparta sus experiencias con nosotros</p>
+          <p align="center">Comparta sus experieNncias con nosotros</p>
         </div>
       </div>
           <div class="col-sm-12 wow fadeInUp" data-wow-duration="10ms" data-wow-delay="10ms">
