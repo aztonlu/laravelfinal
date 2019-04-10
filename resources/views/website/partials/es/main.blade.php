@@ -15,7 +15,7 @@
     <meta name="twitter:card" content="" />
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>@yield('title', 'ruta') | tesis</title>
+    <title>@yield('title', 'ruta') | ATIAC</title>
     <meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')"/>
     <link rel="icon" type="image/png" href="img/favicon.png" />
@@ -63,7 +63,7 @@
       function initialize() {
         //Declarar coordenas de los mapas Cusco - Lima
         var latLng = new google.maps.LatLng(-13.521724002775906, -71.96656546350101);
-        var latLng1 = new google.maps.LatLng(-12.125797, -77.0282776);
+        var latLng1 = new google.maps.LatLng(-13.521724002775906, -71.96656546350101);
 
         //Declarar elemento declarado en la vista
         var map = new google.maps.Map(document.getElementById('google-map'), {

@@ -30,18 +30,51 @@
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
             <div class="folio-image">
               <h3>Precios de Lunes a Domingos</h3>
-              </p>Cusco - Poroy &nbsp &nbsp &nbsp S/.1.50</p>
-              </p>Cusco - Desvio &nbsp &nbsp &nbsp S/.1.50</p>
-              </p>Cusco - Cachimayo &nbsp &nbsp &nbsp S/.2.00</p>
-              </p>Cusco - Pucyura &nbsp &nbsp &nbsp S/.2.00</p>
-              </p>Cusco - Izcuchaca &nbsp &nbsp &nbsp S/.2.00</p>
-
-              </p>Izcuchaca - Pucyura &nbsp &nbsp &nbsp S/.1.00</p>
-              </p>Izcuchaca - Cachimayo &nbsp &nbsp &nbsp S/.1.00</p>
-              </p>Izcuchaca - Desvio &nbsp &nbsp &nbsp S/.1.50</p>
-              </p>Izcuchaca - Poroy &nbsp &nbsp &nbsp S/.1.50</p>
-              </p>Izcuchaca - Cusco &nbsp &nbsp &nbsp S/.2.00</p>
-
+              <table>
+                <tr>
+                  <td><strong>Destino</strong></td>
+                  <td><strong>Precio</strong></td>
+                </tr>
+                <tr>
+                  <td>Cusco - Poroy</td>
+                  <td>S/.1.50</td>
+                </tr>
+                <tr>
+                  <td>Cusco - Desvio</td>
+                  <td>S/.1.50</td>
+                </tr>
+                <tr>
+                  <td>Cusco - Cachimayo</td>
+                  <td>S/.2.00</td>
+                </tr>
+                  <tr>
+                    <td>Cusco - Pucyura</td>
+                    <td>S/.2.00</td>
+                  </tr>
+                  <tr>
+                    <td>Cusco - Izcuchaca</td>
+                    <td>S/.2.00</td>
+                  </tr>
+                  <tr>
+                    <td>Izcuchaca - Pucyura</td>
+                    <td>S/.1.00</td>
+                  </tr>
+              <tr>
+                <td>Izcuchaca - Cachimayo</td>
+                <td>S/.1.00</td>
+              </tr>
+              <tr>
+                <td>Izcuchaca - Desvio</td>
+                <td>S/.1.50</td>
+              </tr>
+              <tr><td>Izcuchaca - Poroy</td>
+              <td>S/.1.50</td>
+            </tr>
+              <tr>
+                <td>Izcuchaca - Cusco</td>
+                <td>S/.2.00</td>
+              </tr>
+            </table>
             </div>
           </div>
         </div>
@@ -101,7 +134,8 @@
                               </div>
                               <div class="col-sm-6">
                                 <div class="form-group">
-                                  <input type="number" name="dniusuario" class="form-control" placeholder="Dni" required="required" style="border: 2px solid #e6e6e6;">
+                                  <!--<input type="number" name="dniusuario" class="form-control" placeholder="Dniiiiii" minlength="5" maxlength="8" required="required" style="border: 2px solid #e6e6e6;">-->
+                                  <input type="text" name="dniusuario" class="form-control" placeholder="Dni" required pattern="[0-9]{8,8}" style="border: 2px solid #e6e6e6;">
                                 </div>
                               </div>
                               <div class="col-sm-6">
@@ -388,16 +422,6 @@
                         <!--</select>-->
                   </div>
               </div>
-
-                     <div class="col-sm-6" type="hidden">
-                        <div class="form-group">
-                                {!! Form::label('Iimagen', 'Imagen', ['class'=>'col-sm-2 control-label']) !!}
-                                <div class="col-sm-10">
-                                    <input id="imagen" type="file"  class="form-control" name="imagen" value="{{ old('imagen') }}" accept="image/png,image/gif,image/jpeg" onchange="readURL(this);">
-                                </div>
-                            </div>
-                    </div>
-                  </div>
                 <div class="form-group">
                   <textarea name="testimonial" id="testimonial" class="form-control" rows="3" placeholder="Ingrese su Testimonio" style="border: 2px solid #e6e6e6;" required="required"></textarea>
                 </div>
@@ -438,12 +462,6 @@
 
 </section>
 
-  <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" style="bottom:150px;">
-    <a class="a2a_button_facebook"></a><br>
-    <a class="a2a_button_twitter"></a><br>
-    <a class="a2a_button_google_plus"></a><br>
-    <a class="a2a_button_pinterest"></a><br>
-</div>
 
 @section('mapas')
 
@@ -521,16 +539,14 @@
               <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
-<<<<<<< HEAD
                       <input type="text" name="name" class="form-control" placeholder="Apellidos y Nombres" required="required" style="border: 2px solid #e6e6e6;">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="number" name="name" class="form-control" placeholder="N&uacute;mero de contacto" required="required" style="border: 2px solid #e6e6e6;">
-=======
-                      <input type="text" name="name" class="form-control" placeholder="Nombre" required="required" style="border: 2px solid #e6e6e6;">
->>>>>>> 7728e1a9e789ec34ed38e773e56ed7ab3464e616
+                      <input type="text" name="name" class="form-control" placeholder="N&uacute;mero de contacto" required pattern="[0-9]{8,8}" style="border: 2px solid #e6e6e6;">
+                      <!--<input type="text" name="name" class="form-control" placeholder="Nombre" required="required" style="border: 2px solid #e6e6e6;">-->
+
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -614,18 +630,44 @@ footer{
             <h5 style="color: #fff;">Suscríbase para tener noticias y notificaciones nuevas</h5>
 
               <form action="{{route('publicnewsletters.store')}}" method="post">
-            {{ csrf_field() }}
-              <?php $url = Request::path();?>
-              <input type="hidden" name="language" value="{{$url}}">
-              <input name='email' placeholder='example@mail.com' class="form-control text-center" type="email" style="width:90%">
-              <button type="submit" class="btn-submit text-center " style="width:90%">Suscribirme ahora</button>
+                {{ csrf_field() }}
+                <?php $url = Request::path();?>
+                <input type="hidden" name="language" value="{{$url}}">
+                <input name='email' placeholder='example@mail.com' class="form-control text-center" type="email" style="width:90%">
+                <button type="submit" class="btn-submit text-center " style="width:90%">Suscribirme ahora</button>
+              </form>
 
-          </form>
 
-    </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+                  <br><br><br><br>
+                  <a href="{{url('')}}/fr/tours/decouverte/High-Mountain"><img src="{{url('')}}/img/fb.jpg" height="40%" width="40%"></a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+                  <br><br><br>
+                  <a href="{{url('')}}/fr/tours/decouverte/High-Mountain"><img src="{{url('')}}/img/twitter.png" height="40%" width="40%"></a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+                  <br>
+                  <a href="{{url('')}}/fr/tours/decouverte/High-Mountain"><img src="{{url('')}}/img/instagram.png" height="40%" width="40%"></a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+
+
+      </div>
+
+
   </div>
+
+
 </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+            <br><br><br><br>
+            <a href="{{url('')}}/fr/tours/decouverte/High-Mountain"><img src="{{url('')}}/img/logo.png" height="40%" width="40%"></a>
+      </div>
     </div>
+
 
   </footer>
 
