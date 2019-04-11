@@ -408,11 +408,12 @@ small.top-element-language{
 .nav-menu .badge {
   margin-left: -5px;
 }
+/*este es el cambio de color en el nav*/
 .nav-menu .navbar {
   border: 0;
   border-radius: 0;
   margin-bottom: 0px;
-  background: #0e4817;
+  background: #679EF6;
 }
 .nav-menu .navbar > .container-fluid .navbar-brand {
   padding: 0;

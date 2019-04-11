@@ -379,9 +379,9 @@
   ul#menu li {
     display:inline;
   }
-footer{
-  background-color: rgb(16,54,9);
-}
+  footer{
+    background-color: #99CCFF;
+  }
 </style>
 
 
