@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<head> <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content=""/>
@@ -15,7 +14,7 @@
     <meta name="twitter:card" content="" />
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>@yield('title', 'Rutas') | Tesis</title>
+    <title>@yield('title', 'Rutas') | ATIAC</title>
     <meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')"/>
     <link rel="stylesheet" href="{{url('')}}/css/min/bootstrap.mn.css" media="all" >
@@ -23,6 +22,7 @@
     <link rel="stylesheet" href="{{url('')}}/vendor/animate-css/animate.css" media="all" >
     <link rel="stylesheet" href="{{url('')}}/font/iconfont/iconstyle.css" media="all" >
     <link rel="stylesheet" href="{{url('')}}/font/font-awesome/css/font-awesome.css" media="all" >
+    <link rel="stylesheet" href="{{url('')}}/css/main.css" media="all">
     <link rel="stylesheet" href="{{url('')}}/css/main-carousel.css" media="all">
     <script type="text/javascript" src="{{url('')}}/vendor/js-cookie/src/js.cookie.js"></script>
 
@@ -34,15 +34,13 @@
 
 <header class="nav-menu fixed-top">
 
-
-    @include('website.partials.es.nav')
+@include('website.partials.es.nav')
 
 </header>
 
-
 @yield('content')
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
 <script type="text/javascript" src="{{url('')}}/vendor/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/vendor/jqueryui/jquery-ui-1.10.3.custom.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/vendor/jquery.ui.touch-punch.min.js"></script>
@@ -55,11 +53,65 @@
 <script type="text/javascript" src="{{url('')}}/js/min/responsivetable.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/js/min/countnumbers.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/js/min/main.min.js"></script>
+    <script>
+      google.maps.event.addDomListener(window, 'load', initialize);
+      function initialize() {
+        //Declarar coordenas de los mapas Cusco - Lima
+        var latLng = new google.maps.LatLng(-13.521724002775906, -71.96656546350101);
+        var latLng1 = new google.maps.LatLng(-13.521724002775906, -71.96656546350101);
 
-<!-- Current Page JS -->
+        //Declarar elemento declarado en la vista
+        var map = new google.maps.Map(document.getElementById('google-map'), {
+          zoom: 15,
+          center: latLng,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+        var map1 = new google.maps.Map(document.getElementById('google-map1'), {
+          zoom: 15,
+          center: latLng1,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+        //Indicar que información ira al hacer click en el marker
+
+        var contentString = '<div id="content">'+'Cusco'+'</div>';
+            var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+        var contentString1 = '<div id="content">'+'Lima'+'</div>';
+            var infowindow1 = new google.maps.InfoWindow({
+            content: contentString1
+        });
+
+        //declaramos nuestros markers
+        var marker = new google.maps.Marker({
+          position: latLng,
+          title: 'title',
+          map: map,
+          draggable: false
+        });
+        var marker1 = new google.maps.Marker({
+          position: latLng1,
+          title: 'title',
+          map: map1,
+          draggable: false
+        });
+
+
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+        marker1.addListener('click', function() {
+          infowindow1.open(map1, marker1);
+        });
+
+
+      }
+
+    </script>
+
+<script type="text/javascript" src="{{url('')}}/js/min/map.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/js/min/tripdetailpage.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/js/min/home.min.js"></script>
-<script type="text/javascript" src="{{url('')}}/js/min/priceslider.min.js"></script>
 
 </body>
 </html>

@@ -9,7 +9,7 @@
     <div class="container">
         <div class="col-xs-12">
                     @include('flash::message')
-                </div>
+        </div>
         <div class="col-md-9 tab-wrap">
             <!--@foreach($tours as $tour)
             <h2>{{ $tour->title}}</h2>
@@ -128,8 +128,8 @@
                     ];
 
                     var map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 6,
-                        center: {lat: -16.894652, lng: -70.8394439},
+                        zoom: 13,
+                        center: {lat: -13.521724002775906, lng: -71.96656546350101},
                         styles: styleArray,
                         scrollwheel:  false,
                         mapTypeControl: false
@@ -179,7 +179,8 @@
 
             </script>
 
-            <div id="map" style="height: 300px"></div>
+              <div id="map" style="height: 300px">
+              </div>
 
                 <!--AQUI ESTOY COMENTANDO EL ANTERIOR CODIGO
                 <h3>En quelques mo.2121321ts...</h3>
@@ -192,12 +193,12 @@
                 <li class="active"><a href="#itenary">Itinéraire</a></li>
                 <li class=""><a href="#overview">Organisation</a></li>
             </ul>-->
-             <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" style="bottom:0px; right:0px;">
+             <!--<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" style="bottom:0px; right:0px;">
                 <a class="a2a_button_facebook"></a>
                 <a class="a2a_button_twitter"></a>
                 <a class="a2a_button_google_plus"></a>
                 <a class="a2a_button_pinterest"></a>
-            </div>
+            </div>-->
 
         </div>
 
@@ -247,7 +248,7 @@
                             </div>
                             <div class="form-group">
                                 <label>DNI</label>
-                                <input type="text" class="form-control" name="skype" placeholder="DNI" value="">
+                                <input type="text" class="form-control" name="skype" required pattern="[0-9]{8,8}" placeholder="DNI" value="">
                             </div>
                             <div hidden class="form-group">
                                 <label>Nacionalidad</label>
@@ -268,13 +269,13 @@
                                 <label>Cantidad de personas</label>
                                 <div class="row">
                                     <div class="col-sm-6"><input type="number" name="adults" class="form-control" placeholder="Adultos" value="1"></div>
-                                    
+
                                 </div>
                             </div>
-                            <div class="form-group">
-                                    <label>Descripci&oacute;n</label>
-                                    <textarea name="message" rows="3" class="form-control"></textarea>
-                            </div>
+                                <div class="form-group">
+                                        <label>Descripci&oacute;n</label>
+                                        <textarea name="message" rows="3" class="form-control"></textarea>
+                                </div>
                                 <button class="btn btn-primary hvr-sweep-to-right" type="submit">Reservar</button>
                                 <div hidden class="form-group">
                                     <label>Tipo de viaje</label>
@@ -312,7 +313,7 @@
                                         <option value="plus1">plus3</option>
                                     </select>
                                 </div>
-                        </div>
+                          </div>
                     </form>
                 </div>
             </div>
@@ -330,29 +331,31 @@
             <div class="modal-body">
 
                 <div class="preview-wrap">
-                    <div class="preview-img" style="background-image: url('{{url('')}}/img/files/lares.jpg')"></div>
+                    <div class="preview-img" style="background-image: url('{{url('')}}/img/files/lares.jpg')">
 
-                    <div class="form-wrap">
-                        <form action="{{ url('') }}/sendComment" method="POST">
-                            {{ csrf_field() }}
-                            <div class="form-group">
-                                <label>Nombre:</label>
-                                <input type="text" name="nameUser" class="form-control" placeholder="Ingrese su nombre" value="" required>
-                                <!--<input type="hidden" name="idTour" value="{{ $tours[0]->id }}">-->
-                                <input type="hidden" name="idTour" value="{{ $tours[0]->id }}">
-                            </div>
-                            <div class="form-group">
-                                <label>DNI</label>
-                                <input type="number" class="form-control" name="comment" placeholder="Ingrese su DNI" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input type="email" name="email" class="form-control" placeholder="Ingrese su email" value="" required>
-                            </div>
-                            <button class="btn btn-primary hvr-sweep-to-right">Registro</button>
 
-                        </form>
-                    </div>
+                          <div class="form-wrap">
+                              <form action="{{ url('') }}/sendComment" method="POST">
+                                  {{ csrf_field() }}
+                                  <div class="form-group">
+                                      <label>Nombre:</label>
+                                      <input type="text" name="nameUser" class="form-control" placeholder="Ingrese su nombre" value="" required>
+                                      <!--<input type="hidden" name="idTour" value="{{ $tours[0]->id }}">-->
+                                      <input type="hidden" name="idTour" value="{{ $tours[0]->id }}">
+                                  </div>
+                                  <div class="form-group">
+                                      <label>DNI</label>
+                                      <input type="text" class="form-control" name="comment" required pattern="[0-9]{8,8}" placeholder="Ingrese su DNI" required>
+                                  </div>
+                                  <div class="form-group">
+                                      <label>Email</label>
+                                      <input type="email" name="email" class="form-control" placeholder="Ingrese su email" value="" required>
+                                  </div>
+                                  <button class="btn btn-primary hvr-sweep-to-right">Registro</button>
+
+                              </form>
+                          </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -376,7 +379,7 @@
   }
   ul#menu li {
     display:inline;
-}
+  }
 footer{
   background-color: rgb(16,54,9);
 }
@@ -386,37 +389,60 @@ footer{
 
 <!--inicio del footer-->
 
- <footer >
+<footer>
 
-    <div class="footer-top wow fadeInUp animated" style="padding-top: 0px;" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInUp;background-color: rgb(23,58,27)">
+   <div class="footer-top wow fadeInUp animated" style="padding-top: 0px;" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInUp;background-color: rgb(13,52,14)">
 
 
 
 <div class="container-fluid">
-  <div class="row" style="text-align: center; color: white;">
+ <div class="row" style="text-align: center; color: Gray;">
 
-     <div class="col-xs-12 col-md-8">
+    <div class="col-xs-12 col-md-8">
+     <div class="row" sty>
 
-    </div>
-     <div class="col-xs-12 col-md-4">
-            <h2><strong>Suscribase</strong></h2>
 
-            <h5 style="color: #fff;">Suscribase para recibir notificaciones</h5>
+    <div class="col-xs-12 col-md-4">
+           <h2><strong>Suscribete</strong></h2>
 
-              <form action="{{route('publicnewsletters.store')}}" method="post">
-            {{ csrf_field() }}
-              <?php $url = Request::path();?>
-              <input type="hidden" name="language" value="{{$url}}">
-              <input name='email' placeholder='example@mail.com' class="form-control text-center" type="email" style="width:90%">
-              <button type="submit" class="btn-submit text-center" style="width:90%">Ingrese su correo</button>
+           <h5 style="color: #fff;">Suscríbase para tener noticias y notificaciones nuevas</h5>
 
-          </form>
+             <form action="{{route('publicnewsletters.store')}}" method="post">
+               {{ csrf_field() }}
+               <?php $url = Request::path();?>
+               <input type="hidden" name="language" value="{{$url}}">
+               <input name='email' placeholder='example@mail.com' class="form-control text-center" type="email" style="width:90%">
+               <button type="submit" class="btn-submit text-center " style="width:90%">Suscribirme ahora</button>
+             </form>
 
-    </div>
+
+     </div>
+
+         <div class="col-xs-12 col-sm-6 col-md-4">
+                     <br><br><br><br>
+                     <a href="{{url('')}}/fr/tours/decouverte/High-Mountain"><img src="{{url('')}}/img/fb.jpg" height="40%" width="40%"></a>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4">
+                     <br><br><br>
+                     <a href="{{url('')}}/fr/tours/decouverte/High-Mountain"><img src="{{url('')}}/img/twitter.png" height="40%" width="40%"></a>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4">
+                     <br>
+                     <a href="{{url('')}}/fr/tours/decouverte/High-Mountain"><img src="{{url('')}}/img/instagram.png" height="40%" width="40%"></a>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4">
+         </div>
+   </div>
+
+
   </div>
+         <div class="col-xs-12 col-sm-6 col-md-4">
+               <br><br><br><br>
+               <a href="{{url('')}}/fr/tours/decouverte/High-Mountain"><img src="{{url('')}}/img/logo.png" height="40%" width="40%"></a>
+         </div>
+
+
 </div>
-    </div>
 
-
-  </footer>
+ </footer>
 @endsection
