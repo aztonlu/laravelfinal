@@ -272,10 +272,10 @@
 
                                 </div>
                             </div>
-                                <div class="form-group">
-                                        <label>Descripci&oacute;n</label>
-                                        <textarea name="message" rows="3" class="form-control"></textarea>
-                                </div>
+                            <div class="form-group">
+                                    <label>Descripci&oacute;n</label>
+                                    <textarea name="message" rows="3" class="form-control"></textarea>
+                            </div>
                                 <button class="btn btn-primary hvr-sweep-to-right" type="submit">Reservar</button>
                                 <div hidden class="form-group">
                                     <label>Tipo de viaje</label>
@@ -313,7 +313,7 @@
                                         <option value="plus1">plus3</option>
                                     </select>
                                 </div>
-                          </div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -331,8 +331,8 @@
             <div class="modal-body">
 
                 <div class="preview-wrap">
-                    <div class="preview-img" style="background-image: url('{{url('')}}/img/files/lares.jpg')">
-
+                    <div class="preview-img" style="background-image: url('{{url('')}}/img/fondo1.png')">
+                    </div>
 
                           <div class="form-wrap">
                               <form action="{{ url('') }}/sendComment" method="POST">
@@ -355,7 +355,6 @@
 
                               </form>
                           </div>
-                      </div>
                 </div>
             </div>
         </div>
