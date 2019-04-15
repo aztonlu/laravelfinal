@@ -481,8 +481,22 @@
             <div class="panel panel-default">
               <div class="panel-body">
                 <center>
-                   <div id="google-map" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
+                   <!--<div id="google-map" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms"></div>-->
+
                 </center>
+                <div class="container">
+                			require 'education.php';
+                			$edu = new education;
+                			$coll = $edu->getCollegesBlankLatLng();
+                			$coll = json_encode($coll, true);
+                			echo '<div id="data">' . $coll . '</div>';
+
+                			$allData = $edu->getAllColleges();
+                			$allData = json_encode($allData, true);
+                			echo '<div id="allData">' . $allData . '</div>';
+
+                		<div id="map"></div>
+                	</div>
               </div>
               <div class="panel-footer" style="color: #000;">
                 <p> Ruta ida</p>
