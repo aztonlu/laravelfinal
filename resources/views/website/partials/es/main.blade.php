@@ -58,6 +58,7 @@
 <script type="text/javascript" src="{{url('')}}/js/min/responsivetable.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/js/min/countnumbers.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/js/min/main.min.js"></script>
+
     <script>
       google.maps.event.addDomListener(window, 'load', initialize);
       function initialize() {
@@ -113,6 +114,8 @@
       }
 
     </script>
+
+
 
 <script type="text/javascript" src="{{url('')}}/js/min/map.min.js"></script>
 <script type="text/javascript" src="{{url('')}}/js/min/tripdetailpage.min.js"></script>

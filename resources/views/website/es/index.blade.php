@@ -497,7 +497,8 @@
             <div class="panel panel-default">
               <div class="panel-body">
 
-                  <div id="google-map1" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
+                  <!--<div id="google-map1" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms"></div>-->
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d62074.572424237434!2d-72.10099884679778!3d-13.494988409330126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x916dd5d8de36c0f7%3A0xe5f7fdd5fce49634!2sMunicipalidad+Distrital+de+Santiago%2C+Giraldo+Ruiz+Caro%2C+Cusco+08000!3m2!1d-13.5258369!2d-71.98301169999999!4m5!1s0x916dd6b537a7a913%3A0x76fd2221fe962f07!2sPoroy%2C+Cusco!3m2!1d-13.5019104!2d-72.0320017!4m5!1s0x916db705dfa0e11d%3A0xe789e70afeae2c98!2sProvincia+de+Anta!3m2!1d-13.462225199999999!2d-72.1494902!5e0!3m2!1ses-419!2spe!4v1523209781173" width="600" height="345" frameborder="0" style="border:0"></iframe>
 
               </div>
               <div class="panel-footer" style="color: #000;">
